@@ -1,0 +1,1028 @@
+user_id,subscription_type,region,device
+U00001,Basic,North,Smart TV
+U00002,FREE,West,
+U00003,Premium,South,Smart TV
+U00004,Basic,West,Tablet
+U00005,Free,North,Mobile
+U00006,Family,West,mobile
+U00007,Free,East,TV
+U00008,Basic,West,Tablet
+U00009,FREE,North,WEB
+U00010,Premium,North,Web
+U00011,FREE,East,TV
+U00012,Free,South,Mobile
+U00013,Basic,South,Web
+U00014,Free,West,Web
+U00015,Free,South,mobile
+U00016,Basic,North,Mobile
+U00017,FREE,West,WEB
+U00018,Free,West,TV
+U00019,Basic,North,Smart TV
+U00020,Family,Central,Mobile
+U00021,Family,South,Tablet
+U00022,FREE,South,Smart TV
+U00023,Free,East,Web
+U00024,Free,West,Smart TV
+U00025,FREE,South,mobile
+U00026,Premium,East,Smart TV
+U00027,Family,East,Tablet
+U00028,Basic,Central,Smart TV
+U00029,Family,NORTH,WEB
+U00030,Free,West,WEB
+U00031,Free,NORTH,Tablet
+U00032,FREE,South,TV
+U00033,Free,West,Smart TV
+U00034,Premium,North,Smart TV
+U00035,Premium,East,Web
+U00036,Premium,West,Smart TV
+U00037,FREE,West,Tablet
+U00038,Basic,NORTH,TV
+U00039,Premium,East,Tablet
+U00040,Basic,North,WEB
+U00041,Basic,East,Smart TV
+U00042,Premium,North,mobile
+U00043,Basic,North,Tablet
+U00044,Premium,East,Web
+U00045,Free,South,Smart TV
+U00046,FREE,NORTH,Mobile
+U00047,FREE,North,TV
+U00048,Premium,North,Smart TV
+U00049,FREE,East,WEB
+U00050,Premium,East,Mobile
+U00051,FREE,East,mobile
+U00052,Family,East,Web
+U00053,Premium,East,WEB
+U00054,Free,West,Web
+U00055,,North,Mobile
+U00056,Free,Central,TV
+U00057,Free,West,mobile
+U00058,Basic,South,Smart TV
+U00059,Premium,South,WEB
+U00060,Premium,East,Smart TV
+U00061,Premium,East,TV
+U00062,FREE,East,WEB
+U00063,Basic,West,mobile
+U00064,Family,Central,Tablet
+U00065,Free,South,
+U00066,Premium,South,TV
+U00067,Family,South,Web
+U00068,Free,West,mobile
+U00069,Family,West,TV
+U00070,Free,South,Smart TV
+U00071,Free,West,Mobile
+U00072,Free,NORTH,Mobile
+U00073,Family,Central,Smart TV
+U00074,Premium,West,mobile
+U00075,Premium,West,mobile
+U00076,Premium,West,WEB
+U00077,Premium,North,TV
+U00078,Basic,South,Smart TV
+U00079,Basic,NORTH,
+U00080,Basic,South,WEB
+U00081,Free,South,Mobile
+U00082,Basic,NORTH,WEB
+U00083,Basic,West,TV
+U00084,,East,Tablet
+U00085,Premium,North,TV
+U00086,FREE,South,TV
+U00087,Basic,South,WEB
+U00088,,North,Smart TV
+U00089,Free,South,WEB
+U00090,Family,East,Tablet
+U00091,Premium,South,TV
+U00092,Basic,North,TV
+U00093,Basic,North,Tablet
+U00094,FREE,South,Web
+U00095,Basic,East,Smart TV
+U00096,Premium,East,TV
+U00097,FREE,West,Mobile
+U00098,Free,NORTH,Mobile
+U00099,Free,West,Tablet
+U00100,Premium,North,
+U00101,Basic,,Mobile
+U00102,Basic,West,Tablet
+U00103,Basic,West,TV
+U00104,Free,West,Mobile
+U00105,Basic,West,mobile
+U00106,Free,Central,TV
+U00107,Free,West,Web
+U00108,Basic,East,Smart TV
+U00109,FREE,South,Web
+U00110,,North,Tablet
+U00111,Basic,South,
+U00112,Family,East,Web
+U00113,Premium,NORTH,Mobile
+U00114,Family,NORTH,Web
+U00115,Premium,South,WEB
+U00116,FREE,West,WEB
+U00117,Free,East,Web
+U00118,Basic,East,Web
+U00119,Basic,South,Smart TV
+U00120,Premium,Central,Web
+U00121,Family,NORTH,TV
+U00122,FREE,East,Tablet
+U00123,FREE,North,Mobile
+U00124,Basic,Central,Mobile
+U00125,,NORTH,WEB
+U00126,Premium,Central,TV
+U00127,Premium,,Smart TV
+U00128,Basic,East,Mobile
+U00129,Basic,South,Smart TV
+U00130,Premium,East,Mobile
+U00131,Free,West,mobile
+U00132,Premium,North,TV
+U00133,Free,Central,Web
+U00134,Free,NORTH,TV
+U00135,Family,South,Web
+U00136,Basic,West,Smart TV
+U00137,Premium,West,WEB
+U00138,Premium,East,Tablet
+U00139,Free,East,Smart TV
+U00140,Free,North,WEB
+U00141,Family,Central,TV
+U00142,Basic,North,WEB
+U00143,Free,South,TV
+U00144,Family,South,Web
+U00145,FREE,West,TV
+U00146,Free,West,Tablet
+U00147,Free,Central,WEB
+U00148,Basic,Central,Web
+U00149,Basic,East,Web
+U00150,Free,South,Web
+U00151,Premium,West,Web
+U00152,Free,South,mobile
+U00153,Basic,NORTH,Smart TV
+U00154,Free,North,mobile
+U00155,Basic,North,mobile
+U00156,Family,Central,Mobile
+U00157,Basic,North,mobile
+U00158,Family,NORTH,Tablet
+U00159,Basic,NORTH,mobile
+U00160,Free,South,Smart TV
+U00161,FREE,East,Web
+U00162,Basic,NORTH,Tablet
+U00163,FREE,East,TV
+U00164,Family,North,Smart TV
+U00165,Basic,East,mobile
+U00166,FREE,North,
+U00167,Free,Central,Web
+U00168,Family,North,WEB
+U00169,Free,South,
+U00170,Premium,,mobile
+U00171,Premium,East,Smart TV
+U00172,Basic,Central,mobile
+U00173,Free,South,WEB
+U00174,Family,Central,TV
+U00175,Family,East,Mobile
+U00176,Free,West,Tablet
+U00177,Basic,South,Tablet
+U00178,Family,North,Tablet
+U00179,Basic,West,TV
+U00180,Free,South,WEB
+U00181,Basic,West,TV
+U00182,Premium,North,mobile
+U00183,Family,South,
+U00184,Premium,South,Smart TV
+U00185,Free,South,mobile
+U00186,Basic,East,Tablet
+U00187,Premium,South,Tablet
+U00188,FREE,West,WEB
+U00189,FREE,East,Tablet
+U00190,Family,Central,Tablet
+U00191,Basic,Central,TV
+U00192,FREE,NORTH,Web
+U00193,Basic,East,TV
+U00194,Family,North,Smart TV
+U00195,Premium,West,Mobile
+U00196,Basic,North,
+U00197,Premium,North,Mobile
+U00198,Family,North,Tablet
+U00199,Free,West,Tablet
+U00200,Premium,North,Web
+U00201,FREE,North,WEB
+U00202,Basic,East,Smart TV
+U00203,Family,South,TV
+U00204,FREE,,Tablet
+U00205,Free,North,Web
+U00206,Basic,East,WEB
+U00207,Premium,East,mobile
+U00208,Free,North,mobile
+U00209,Free,South,Smart TV
+U00210,Basic,East,WEB
+U00211,Premium,,
+U00212,FREE,North,Web
+U00213,Family,South,Web
+U00214,Free,North,Web
+U00215,Basic,Central,WEB
+U00216,Basic,South,Mobile
+U00217,Free,NORTH,TV
+U00218,Basic,North,WEB
+U00219,Free,West,TV
+U00220,Free,West,TV
+U00221,,East,Tablet
+U00222,Basic,West,TV
+U00223,Premium,Central,WEB
+U00224,Free,East,mobile
+U00225,Basic,East,Web
+U00226,Basic,West,Mobile
+U00227,FREE,West,Smart TV
+U00228,Basic,North,Smart TV
+U00229,Family,South,mobile
+U00230,Family,South,Smart TV
+U00231,FREE,West,WEB
+U00232,Basic,West,WEB
+U00233,Free,NORTH,mobile
+U00234,Basic,NORTH,Mobile
+U00235,Free,North,WEB
+U00236,Basic,South,Mobile
+U00237,Basic,NORTH,Smart TV
+U00238,Premium,East,Tablet
+U00239,Premium,East,Smart TV
+U00240,FREE,West,WEB
+U00241,Premium,South,Tablet
+U00242,FREE,NORTH,WEB
+U00243,Family,South,Web
+U00244,Premium,West,WEB
+U00245,,West,mobile
+U00246,Basic,NORTH,Mobile
+U00247,Premium,NORTH,TV
+U00248,Premium,West,Web
+U00249,FREE,NORTH,Web
+U00250,FREE,East,Mobile
+U00251,Family,South,TV
+U00252,Basic,South,mobile
+U00253,Family,South,Smart TV
+U00254,Premium,South,WEB
+U00255,Free,South,Web
+U00256,Family,North,Smart TV
+U00257,Family,Central,Smart TV
+U00258,Free,South,mobile
+U00259,Free,North,Smart TV
+U00260,Free,NORTH,Smart TV
+U00261,Premium,Central,Web
+U00262,FREE,West,Mobile
+U00263,Family,NORTH,Mobile
+U00264,Premium,West,TV
+U00265,Premium,Central,Smart TV
+U00266,FREE,South,WEB
+U00267,Family,Central,TV
+U00268,Free,East,Web
+U00269,Free,East,TV
+U00270,FREE,North,Mobile
+U00271,FREE,East,Smart TV
+U00272,Premium,South,WEB
+U00273,Free,West,Web
+U00274,Premium,,Tablet
+U00275,Free,East,Mobile
+U00276,FREE,South,Mobile
+U00277,Basic,North,Tablet
+U00278,Basic,West,Smart TV
+U00279,Free,East,TV
+U00280,FREE,South,TV
+U00281,Basic,East,WEB
+U00282,Basic,West,mobile
+U00283,Family,East,Tablet
+U00284,Premium,South,
+U00285,Basic,Central,mobile
+U00286,Free,West,Smart TV
+U00287,Basic,West,Smart TV
+U00288,Family,Central,Smart TV
+U00289,Basic,East,TV
+U00290,Premium,East,Mobile
+U00291,Premium,North,Tablet
+U00292,Premium,West,Tablet
+U00293,FREE,North,TV
+U00294,FREE,Central,Smart TV
+U00295,Premium,South,Smart TV
+U00296,Family,Central,WEB
+U00297,Family,North,Mobile
+U00298,Family,East,Web
+U00299,Premium,South,Mobile
+U00300,Premium,Central,mobile
+U00301,FREE,South,Mobile
+U00302,Premium,Central,Smart TV
+U00303,Basic,Central,mobile
+U00304,Premium,South,Mobile
+U00305,Free,North,Smart TV
+U00306,Free,West,Web
+U00307,Free,South,TV
+U00308,Free,Central,mobile
+U00309,Free,East,Tablet
+U00310,Premium,Central,TV
+U00311,Basic,South,Mobile
+U00312,Premium,NORTH,Tablet
+U00313,Free,NORTH,Smart TV
+U00314,Basic,East,Web
+U00315,Basic,South,Web
+U00316,Basic,East,Mobile
+U00317,,South,Web
+U00318,FREE,NORTH,Mobile
+U00319,Basic,East,WEB
+U00320,Free,,
+U00321,Basic,North,TV
+U00322,Free,West,WEB
+U00323,Premium,South,WEB
+U00324,Free,West,Web
+U00325,Premium,Central,Tablet
+U00326,Premium,South,Mobile
+U00327,Family,East,Web
+U00328,Free,,Tablet
+U00329,Basic,West,
+U00330,Basic,South,Mobile
+U00331,Premium,South,Smart TV
+U00332,FREE,East,Smart TV
+U00333,FREE,North,WEB
+U00334,Premium,South,TV
+U00335,Premium,East,TV
+U00336,Basic,West,
+U00337,Premium,South,Web
+U00338,Basic,NORTH,WEB
+U00339,FREE,North,Web
+U00340,FREE,West,mobile
+U00341,Premium,East,Tablet
+U00342,Premium,NORTH,Web
+U00343,Basic,South,Web
+U00344,,West,mobile
+U00345,Basic,West,WEB
+U00346,Basic,North,Web
+U00347,Premium,North,Tablet
+U00348,Premium,South,Mobile
+U00349,Premium,East,mobile
+U00350,Free,South,WEB
+U00351,Premium,South,mobile
+U00352,,North,Smart TV
+U00353,Premium,North,WEB
+U00354,Premium,South,Tablet
+U00355,FREE,NORTH,mobile
+U00356,Basic,South,WEB
+U00357,Free,East,Tablet
+U00358,Free,South,WEB
+U00359,Free,West,Mobile
+U00360,Family,Central,TV
+U00361,Basic,North,Mobile
+U00362,Basic,South,TV
+U00363,FREE,North,Mobile
+U00364,Free,North,Web
+U00365,Free,NORTH,Tablet
+U00366,Premium,West,
+U00367,Basic,West,Smart TV
+U00368,Premium,East,TV
+U00369,Basic,West,WEB
+U00370,Basic,West,Smart TV
+U00371,Family,South,mobile
+U00372,Premium,West,Tablet
+U00373,FREE,,Web
+U00374,Free,South,Web
+U00375,Premium,South,Tablet
+U00376,Free,West,Web
+U00377,Basic,Central,Tablet
+U00378,FREE,West,Tablet
+U00379,Premium,South,TV
+U00380,Basic,West,
+U00381,FREE,,Mobile
+U00382,Basic,Central,Mobile
+U00383,Free,West,Smart TV
+U00384,Premium,Central,WEB
+U00385,Family,West,WEB
+U00386,Free,West,Smart TV
+U00387,Family,West,Web
+U00388,Premium,South,
+U00389,Free,Central,WEB
+U00390,Premium,North,mobile
+U00391,Free,East,Mobile
+U00392,FREE,NORTH,Smart TV
+U00393,Basic,East,TV
+U00394,Premium,East,Web
+U00395,FREE,East,Web
+U00396,Premium,Central,Smart TV
+U00397,Free,South,Tablet
+U00398,Basic,East,
+U00399,Family,North,WEB
+U00400,Free,South,WEB
+U00401,Basic,North,Web
+U00402,Basic,South,Web
+U00403,FREE,West,Tablet
+U00404,Free,South,Smart TV
+U00405,Family,South,Mobile
+U00406,Free,West,TV
+U00407,Basic,South,Smart TV
+U00408,FREE,North,Mobile
+U00409,Premium,North,Mobile
+U00410,FREE,South,Mobile
+U00411,Basic,West,mobile
+U00412,Premium,North,Tablet
+U00413,Free,East,Tablet
+U00414,Premium,North,Smart TV
+U00415,Basic,South,mobile
+U00416,,Central,Mobile
+U00417,Free,West,Tablet
+U00418,Premium,West,WEB
+U00419,Free,South,Smart TV
+U00420,Free,East,Smart TV
+U00421,Free,North,Tablet
+U00422,FREE,West,Mobile
+U00423,Premium,South,Smart TV
+U00424,Family,West,Mobile
+U00425,Free,NORTH,TV
+U00426,Premium,West,TV
+U00427,Basic,East,TV
+U00428,Family,West,Web
+U00429,Premium,West,Mobile
+U00430,FREE,East,TV
+U00431,FREE,East,Mobile
+U00432,Free,East,Mobile
+U00433,Free,West,mobile
+U00434,Free,North,TV
+U00435,FREE,North,TV
+U00436,Basic,,Mobile
+U00437,Basic,,Tablet
+U00438,Free,East,mobile
+U00439,Basic,South,mobile
+U00440,Family,West,Mobile
+U00441,FREE,South,Smart TV
+U00442,Free,North,Tablet
+U00443,Basic,North,Smart TV
+U00444,Basic,South,Smart TV
+U00445,Premium,South,Mobile
+U00446,Free,West,TV
+U00447,Basic,East,Web
+U00448,Free,North,mobile
+U00449,FREE,South,mobile
+U00450,Basic,South,WEB
+U00451,Basic,,Smart TV
+U00452,Family,North,Tablet
+U00453,Family,North,Web
+U00454,Premium,North,Tablet
+U00455,Basic,NORTH,Tablet
+U00456,Free,Central,Web
+U00457,Premium,South,Mobile
+U00458,Basic,South,Mobile
+U00459,Basic,South,Smart TV
+U00460,Free,East,
+U00461,Free,,mobile
+U00462,Free,South,Tablet
+U00463,Free,North,WEB
+U00464,Free,Central,mobile
+U00465,FREE,NORTH,
+U00466,Family,East,Smart TV
+U00467,Premium,West,WEB
+U00468,Basic,NORTH,WEB
+U00469,Free,South,WEB
+U00470,FREE,West,TV
+U00471,Basic,East,WEB
+U00472,Free,West,Smart TV
+U00473,FREE,North,TV
+U00474,FREE,Central,Web
+U00475,Free,,TV
+U00476,Premium,West,Smart TV
+U00477,Basic,South,TV
+U00478,Free,South,Smart TV
+U00479,Family,North,Tablet
+U00480,Premium,NORTH,TV
+U00481,Free,Central,Smart TV
+U00482,Free,West,mobile
+U00483,Basic,North,TV
+U00484,Premium,West,Mobile
+U00485,Basic,Central,Tablet
+U00486,Basic,South,mobile
+U00487,Premium,North,Web
+U00488,Family,East,Mobile
+U00489,Free,North,Mobile
+U00490,FREE,West,Tablet
+U00491,FREE,North,TV
+U00492,Basic,West,Mobile
+U00493,Free,West,Web
+U00494,Family,East,WEB
+U00495,FREE,Central,Web
+U00496,Basic,North,Tablet
+U00497,Basic,East,TV
+U00498,Basic,East,Smart TV
+U00499,Family,East,mobile
+U00500,Free,South,Tablet
+U00501,Free,North,Mobile
+U00502,Premium,South,WEB
+U00503,Free,West,Tablet
+U00504,Basic,North,Web
+U00505,Basic,,Mobile
+U00506,Free,East,WEB
+U00507,Premium,NORTH,Mobile
+U00508,Basic,South,TV
+U00509,Basic,West,Tablet
+U00510,Basic,North,WEB
+U00511,FREE,NORTH,TV
+U00512,Free,East,Mobile
+U00513,Basic,East,mobile
+U00514,Family,NORTH,Web
+U00515,Premium,West,Mobile
+U00516,Premium,Central,TV
+U00517,Premium,West,TV
+U00518,Basic,East,WEB
+U00519,Premium,South,WEB
+U00520,,West,Smart TV
+U00521,Free,NORTH,TV
+U00522,Premium,South,Tablet
+U00523,Premium,Central,WEB
+U00524,FREE,West,Mobile
+U00525,Free,East,Mobile
+U00526,FREE,South,Tablet
+U00527,Free,North,Web
+U00528,FREE,South,Smart TV
+U00529,Basic,West,mobile
+U00530,Basic,South,mobile
+U00531,Free,South,WEB
+U00532,Family,NORTH,mobile
+U00533,Premium,East,TV
+U00534,Free,South,Mobile
+U00535,Free,South,mobile
+U00536,Premium,North,TV
+U00537,Premium,South,mobile
+U00538,,NORTH,Web
+U00539,FREE,North,Tablet
+U00540,Free,West,Mobile
+U00541,Free,South,Web
+U00542,Basic,East,Smart TV
+U00543,Basic,Central,Web
+U00544,Premium,,Mobile
+U00545,Premium,NORTH,Web
+U00546,Basic,East,mobile
+U00547,Basic,Central,mobile
+U00548,Basic,NORTH,WEB
+U00549,Premium,East,Mobile
+U00550,Basic,East,Web
+U00551,Free,NORTH,Web
+U00552,,,Web
+U00553,Premium,West,TV
+U00554,Premium,East,Mobile
+U00555,FREE,South,mobile
+U00556,Free,NORTH,WEB
+U00557,Premium,West,Tablet
+U00558,Premium,East,TV
+U00559,Premium,South,Mobile
+U00560,Basic,NORTH,Smart TV
+U00561,Family,South,mobile
+U00562,FREE,South,TV
+U00563,Family,Central,WEB
+U00564,Premium,West,Web
+U00565,Premium,South,WEB
+U00566,FREE,North,mobile
+U00567,Basic,East,WEB
+U00568,Family,West,TV
+U00569,FREE,North,Smart TV
+U00570,Premium,NORTH,mobile
+U00571,Basic,East,WEB
+U00572,Basic,Central,
+U00573,Premium,Central,Tablet
+U00574,Premium,North,Mobile
+U00575,Family,South,Web
+U00576,Free,North,Mobile
+U00577,Basic,East,Web
+U00578,,North,Mobile
+U00579,Free,West,Mobile
+U00580,Free,South,WEB
+U00581,Free,East,TV
+U00582,Free,Central,WEB
+U00583,Premium,,WEB
+U00584,Premium,South,mobile
+U00585,Free,South,Mobile
+U00586,FREE,West,WEB
+U00587,Premium,East,Smart TV
+U00588,Basic,South,WEB
+U00589,FREE,West,Web
+U00590,Basic,North,TV
+U00591,Basic,West,Tablet
+U00592,Basic,South,WEB
+U00593,Premium,West,mobile
+U00594,Free,East,mobile
+U00595,Family,East,Web
+U00596,Basic,North,mobile
+U00597,Free,West,mobile
+U00598,Basic,East,Smart TV
+U00599,Basic,East,Web
+U00600,Basic,East,mobile
+U00601,Free,North,WEB
+U00602,,North,Smart TV
+U00603,Basic,NORTH,Web
+U00604,Free,NORTH,WEB
+U00605,Basic,NORTH,TV
+U00606,Basic,West,Smart TV
+U00607,Free,East,Mobile
+U00608,Free,East,Web
+U00609,Premium,,Smart TV
+U00610,Premium,East,WEB
+U00611,,South,Smart TV
+U00612,Premium,North,Web
+U00613,Family,North,WEB
+U00614,Family,North,Web
+U00615,FREE,East,Tablet
+U00616,Premium,Central,Mobile
+U00617,Family,Central,Web
+U00618,Free,NORTH,Web
+U00619,Basic,NORTH,Tablet
+U00620,Basic,South,Tablet
+U00621,,East,Tablet
+U00622,Premium,NORTH,WEB
+U00623,FREE,South,Smart TV
+U00624,Basic,South,Tablet
+U00625,Premium,East,Web
+U00626,Free,South,Mobile
+U00627,Free,Central,Web
+U00628,Premium,West,Smart TV
+U00629,Basic,East,Smart TV
+U00630,Premium,NORTH,Tablet
+U00631,Free,NORTH,mobile
+U00632,Basic,Central,Smart TV
+U00633,Free,South,Smart TV
+U00634,Basic,NORTH,mobile
+U00635,Premium,North,TV
+U00636,Premium,North,TV
+U00637,Basic,West,WEB
+U00638,Free,NORTH,Tablet
+U00639,Free,West,TV
+U00640,Premium,NORTH,Web
+U00641,Premium,South,mobile
+U00642,Premium,East,Web
+U00643,Basic,NORTH,Smart TV
+U00644,FREE,West,Mobile
+U00645,Free,East,Tablet
+U00646,Basic,East,Mobile
+U00647,FREE,Central,Smart TV
+U00648,Premium,West,mobile
+U00649,FREE,South,TV
+U00650,Basic,East,WEB
+U00651,Basic,South,TV
+U00652,Premium,South,WEB
+U00653,Free,NORTH,Smart TV
+U00654,Basic,East,mobile
+U00655,FREE,Central,WEB
+U00656,Premium,East,WEB
+U00657,Free,East,TV
+U00658,Basic,West,WEB
+U00659,Premium,,WEB
+U00660,Premium,North,Web
+U00661,Free,South,WEB
+U00662,Premium,West,Mobile
+U00663,Basic,Central,Tablet
+U00664,Premium,East,Tablet
+U00665,Basic,West,Mobile
+U00666,Premium,NORTH,Smart TV
+U00667,Basic,South,Tablet
+U00668,Free,East,WEB
+U00669,Premium,East,Tablet
+U00670,Free,South,mobile
+U00671,Premium,Central,TV
+U00672,Premium,NORTH,Smart TV
+U00673,,NORTH,mobile
+U00674,FREE,South,Web
+U00675,Family,East,
+U00676,Premium,,mobile
+U00677,Basic,East,Smart TV
+U00678,Premium,West,mobile
+U00679,Premium,East,Smart TV
+U00680,Free,West,Mobile
+U00681,Free,South,Mobile
+U00682,FREE,,WEB
+U00683,Basic,West,Smart TV
+U00684,Free,South,Smart TV
+U00685,FREE,Central,Tablet
+U00686,Family,North,Web
+U00687,Premium,South,Smart TV
+U00688,Free,East,Tablet
+U00689,Basic,South,Tablet
+U00690,Family,NORTH,mobile
+U00691,Premium,NORTH,
+U00692,Free,NORTH,Tablet
+U00693,Premium,NORTH,mobile
+U00694,Basic,NORTH,TV
+U00695,Premium,South,Web
+U00696,Premium,West,TV
+U00697,Basic,North,Web
+U00698,Basic,West,Tablet
+U00699,Family,East,WEB
+U00700,Free,West,Smart TV
+U00701,Free,,WEB
+U00702,Premium,South,mobile
+U00703,Premium,South,Web
+U00704,Premium,North,Mobile
+U00705,Basic,East,Tablet
+U00706,Family,West,mobile
+U00707,Free,North,Mobile
+U00708,FREE,South,mobile
+U00709,Premium,Central,mobile
+U00710,Free,South,Tablet
+U00711,Premium,Central,Smart TV
+U00712,Free,North,Web
+U00713,Free,North,Mobile
+U00714,Family,NORTH,mobile
+U00715,FREE,South,Tablet
+U00716,Premium,,Web
+U00717,Basic,,Mobile
+U00718,Basic,NORTH,WEB
+U00719,Free,East,Web
+U00720,Premium,,mobile
+U00721,Basic,East,Mobile
+U00722,Free,North,TV
+U00723,Free,South,mobile
+U00724,Premium,East,mobile
+U00725,Premium,NORTH,mobile
+U00726,Free,East,Tablet
+U00727,FREE,West,Web
+U00728,Premium,West,Web
+U00729,Premium,North,Web
+U00730,Free,South,Tablet
+U00731,FREE,North,mobile
+U00732,Premium,Central,Smart TV
+U00733,Family,North,mobile
+U00734,Premium,East,mobile
+U00735,Basic,East,WEB
+U00736,Family,North,mobile
+U00737,Basic,West,Mobile
+U00738,Premium,NORTH,Tablet
+U00739,,North,Smart TV
+U00740,,,mobile
+U00741,,North,Smart TV
+U00742,Premium,East,TV
+U00743,Free,South,mobile
+U00744,Basic,NORTH,TV
+U00745,Premium,East,Web
+U00746,Free,Central,mobile
+U00747,Premium,West,TV
+U00748,FREE,East,Web
+U00749,Family,Central,WEB
+U00750,FREE,West,Smart TV
+U00751,Premium,NORTH,Tablet
+U00752,Free,,WEB
+U00753,FREE,Central,Mobile
+U00754,Basic,North,WEB
+U00755,Free,East,Web
+U00756,Free,Central,Smart TV
+U00757,Basic,NORTH,Tablet
+U00758,FREE,South,TV
+U00759,Family,East,Web
+U00760,FREE,East,Mobile
+U00761,Family,West,Mobile
+U00762,Family,West,Mobile
+U00763,Basic,North,Web
+U00764,Premium,South,Smart TV
+U00765,Premium,North,mobile
+U00766,Premium,North,Smart TV
+U00767,Premium,South,Smart TV
+U00768,Family,Central,Web
+U00769,FREE,North,WEB
+U00770,Basic,West,TV
+U00771,Free,East,Tablet
+U00772,Premium,North,WEB
+U00773,Basic,South,TV
+U00774,FREE,North,Mobile
+U00775,FREE,West,mobile
+U00776,Basic,NORTH,Web
+U00777,Premium,East,mobile
+U00778,Premium,East,WEB
+U00779,Premium,Central,TV
+U00780,Basic,NORTH,TV
+U00781,Premium,Central,Smart TV
+U00782,Premium,North,Smart TV
+U00783,Free,Central,mobile
+U00784,Family,East,mobile
+U00785,Basic,North,mobile
+U00786,Free,South,Tablet
+U00787,Basic,East,TV
+U00788,Premium,NORTH,TV
+U00789,Free,Central,Tablet
+U00790,Family,South,WEB
+U00791,FREE,NORTH,Web
+U00792,Free,Central,Smart TV
+U00793,Free,West,Mobile
+U00794,Basic,South,
+U00795,Premium,North,Smart TV
+U00796,FREE,South,Smart TV
+U00797,FREE,NORTH,mobile
+U00798,Family,West,TV
+U00799,Premium,East,Tablet
+U00800,Free,North,Smart TV
+U00801,Premium,East,WEB
+U00802,Family,West,Smart TV
+U00803,Basic,East,Tablet
+U00804,Free,South,mobile
+U00805,Basic,North,WEB
+U00806,Family,West,mobile
+U00807,Premium,East,Web
+U00808,Premium,South,Smart TV
+U00809,Family,West,Tablet
+U00810,Basic,East,Tablet
+U00811,Free,,TV
+U00812,Basic,South,mobile
+U00813,Free,East,Tablet
+U00814,FREE,North,Tablet
+U00815,FREE,,Smart TV
+U00816,Family,West,Mobile
+U00817,Free,North,
+U00818,Basic,East,Mobile
+U00819,Basic,South,Mobile
+U00820,FREE,North,TV
+U00821,Premium,North,Web
+U00822,Basic,South,WEB
+U00823,Basic,North,Mobile
+U00824,Premium,NORTH,Mobile
+U00825,Premium,East,Tablet
+U00826,Premium,West,WEB
+U00827,Free,North,Web
+U00828,Premium,East,Tablet
+U00829,Basic,West,TV
+U00830,Premium,,TV
+U00831,FREE,West,Smart TV
+U00832,Basic,North,WEB
+U00833,Basic,West,WEB
+U00834,Free,West,TV
+U00835,Basic,South,mobile
+U00836,Free,South,mobile
+U00837,Free,West,Smart TV
+U00838,Free,North,Tablet
+U00839,Family,East,TV
+U00840,,East,mobile
+U00841,FREE,West,WEB
+U00842,Free,West,mobile
+U00843,Free,West,Web
+U00844,Premium,East,TV
+U00845,Basic,Central,Web
+U00846,Free,East,mobile
+U00847,Premium,North,mobile
+U00848,Premium,North,Web
+U00849,Basic,East,Web
+U00850,Basic,North,TV
+U00851,FREE,North,TV
+U00852,Premium,West,WEB
+U00853,,,WEB
+U00854,Premium,South,Mobile
+U00855,Basic,North,mobile
+U00856,Premium,North,TV
+U00857,FREE,West,
+U00858,Basic,South,WEB
+U00859,Free,South,mobile
+U00860,Family,North,Web
+U00861,Basic,West,mobile
+U00862,Free,South,TV
+U00863,Family,South,TV
+U00864,Free,Central,Mobile
+U00865,Family,West,Smart TV
+U00866,Basic,,TV
+U00867,Family,North,TV
+U00868,Free,Central,Tablet
+U00869,Premium,East,Smart TV
+U00870,Free,Central,Web
+U00871,Free,East,Tablet
+U00872,Premium,South,WEB
+U00873,Premium,NORTH,TV
+U00874,Free,NORTH,Tablet
+U00875,Free,West,WEB
+U00876,Family,East,Mobile
+U00877,FREE,East,mobile
+U00878,Basic,Central,TV
+U00879,Family,NORTH,TV
+U00880,Basic,West,WEB
+U00881,Family,South,mobile
+U00882,Free,Central,WEB
+U00883,Premium,South,Tablet
+U00884,Premium,NORTH,TV
+U00885,Premium,East,Tablet
+U00886,Premium,East,Smart TV
+U00887,Free,East,Mobile
+U00888,Basic,North,WEB
+U00889,Free,North,TV
+U00890,Family,South,Smart TV
+U00891,Premium,North,TV
+U00892,Premium,NORTH,Mobile
+U00893,Premium,South,
+U00894,Free,East,mobile
+U00895,Basic,North,Mobile
+U00896,FREE,East,Web
+U00897,Free,East,WEB
+U00898,Basic,East,Mobile
+U00899,Basic,East,TV
+U00900,Family,West,mobile
+U00901,FREE,NORTH,Web
+U00902,Basic,South,Web
+U00903,Basic,South,mobile
+U00904,Family,West,Web
+U00905,Basic,North,Mobile
+U00906,Basic,North,Tablet
+U00907,Premium,North,Smart TV
+U00908,Free,East,Mobile
+U00909,Premium,North,Smart TV
+U00910,Free,West,WEB
+U00911,Basic,East,Mobile
+U00912,Family,West,WEB
+U00913,Premium,,Mobile
+U00914,Basic,Central,mobile
+U00915,Free,East,WEB
+U00916,Free,North,TV
+U00917,Premium,North,Mobile
+U00918,FREE,East,mobile
+U00919,Family,West,WEB
+U00920,Basic,East,Web
+U00921,Basic,East,WEB
+U00922,Basic,East,Smart TV
+U00923,Free,North,Mobile
+U00924,Basic,West,WEB
+U00925,Basic,NORTH,mobile
+U00926,Basic,NORTH,Mobile
+U00927,FREE,South,Tablet
+U00928,Family,NORTH,mobile
+U00929,Basic,North,TV
+U00930,Basic,South,WEB
+U00931,FREE,West,Smart TV
+U00932,Basic,South,Web
+U00933,Premium,North,Smart TV
+U00934,Premium,North,Web
+U00935,Free,South,Mobile
+U00936,Free,Central,Tablet
+U00937,Free,Central,Mobile
+U00938,Premium,South,TV
+U00939,Basic,South,mobile
+U00940,Basic,South,Mobile
+U00941,Basic,NORTH,mobile
+U00942,Basic,West,mobile
+U00943,Free,North,Mobile
+U00944,FREE,North,Tablet
+U00945,Basic,East,TV
+U00946,Premium,North,TV
+U00947,Premium,Central,Web
+U00948,FREE,South,TV
+U00949,Basic,East,Tablet
+U00950,FREE,North,Web
+U00951,Premium,South,Web
+U00952,FREE,West,Smart TV
+U00953,Premium,West,mobile
+U00954,Family,South,Mobile
+U00955,Premium,Central,Mobile
+U00956,Basic,NORTH,WEB
+U00957,Basic,NORTH,Tablet
+U00958,Free,North,WEB
+U00959,Premium,Central,Web
+U00960,Family,,Web
+U00961,Premium,North,Web
+U00962,FREE,South,mobile
+U00963,Family,NORTH,Tablet
+U00964,FREE,North,Web
+U00965,Basic,West,TV
+U00966,Premium,East,Mobile
+U00967,Premium,West,
+U00968,FREE,South,WEB
+U00969,Basic,South,TV
+U00970,FREE,West,Web
+U00971,Premium,North,WEB
+U00972,Basic,South,Tablet
+U00973,Premium,West,Tablet
+U00974,Basic,,Mobile
+U00975,Free,East,mobile
+U00976,Basic,South,WEB
+U00977,Family,NORTH,TV
+U00978,Free,West,Smart TV
+U00979,Basic,NORTH,WEB
+U00980,Basic,South,Mobile
+U00981,Basic,Central,TV
+U00982,Family,South,Web
+U00983,Basic,South,WEB
+U00984,,NORTH,Mobile
+U00985,Premium,South,Web
+U00986,Basic,South,Mobile
+U00987,Premium,NORTH,Web
+U00988,Free,South,WEB
+U00989,Family,East,Tablet
+U00990,Free,South,Mobile
+U00991,Premium,South,
+U00992,Basic,Central,Mobile
+U00993,Basic,North,WEB
+U00994,Free,South,Smart TV
+U00995,Premium,West,mobile
+U00996,Premium,East,TV
+U00997,Free,East,Tablet
+U00998,Premium,,WEB
+U00999,Basic,East,TV
+U01000,Basic,North,Mobile
+U00677,Basic,East,Smart TV
+U00451,Basic,,Smart TV
+U00744,Basic,NORTH,TV
+U00653,Free,NORTH,Smart TV
+U00172,Basic,Central,mobile
+U00216,Basic,South,Mobile
+U00592,Basic,South,WEB
+U00752,Free,,WEB
+U00863,Family,South,TV
+U00354,Premium,South,Tablet
+U00056,Free,Central,TV
+U00658,Basic,West,WEB
+U00271,FREE,East,Smart TV
+U00774,FREE,North,Mobile
+U00840,,East,mobile
+U00119,Basic,South,Smart TV
+U00054,Free,West,Web
+U00476,Premium,West,Smart TV
+U00409,Premium,North,Mobile
+U00488,Family,East,Mobile
+U00309,Free,East,Tablet
+U00765,Premium,North,mobile
+U00972,Basic,South,Tablet
+U00771,Free,East,Tablet
+U00945,Basic,East,TV
+U00000,Premium,Unknown,Mobile
+user-xyz,Basic,South,Web
