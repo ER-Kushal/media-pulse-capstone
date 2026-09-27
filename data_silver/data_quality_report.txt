@@ -2,7 +2,7 @@
 ======================================================================
 MEDIAPULSE BRONZE -> SILVER CLEANING RUN
 ======================================================================
-Run time: 2026-09-26T11:24:12.670422+00:00 UTC
+Run time: 2026-09-27T09:10:40.035859+00:00 UTC
 
 ======================================================================
 Cleaning users_raw.csv
@@ -38,6 +38,7 @@ Cleaning ads_raw.csv
 [ads] dropped 80 rows with unknown user_id, 0 rows with unknown content_id
 [ads] impression: 58 invalid values (e.g. -1, 2) set to null
 [ads] click: 59 invalid values (e.g. -1, 2) set to null
+[ads] business rule 'click implies impression': fixed 1277 rows where click=1 but impression was 0/unknown (set impression=1)
 [ads] dropped 150 rows with unparsable/missing timestamp
 [ads] 99 missing campaign_id -> 'UNKNOWN'
 [ads] 10120 raw rows -> 9770 clean rows

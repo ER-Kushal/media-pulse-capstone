@@ -205,6 +205,13 @@ def main():
     ads["click"] = normalize_binary(
         ads["click"], true_vals={"1", "yes", "clicked"}, false_vals={"0", "no"}, label="click")
 
+    # Business rule: a click cannot happen without an impression.
+    invalid_click = (ads["click"] == 1) & (ads["impression"] != 1)
+    n_invalid_click = invalid_click.sum()
+    ads.loc[invalid_click, "impression"] = 1
+    log(f"[ads] business rule 'click implies impression': fixed {n_invalid_click} rows "
+        f"where click=1 but impression was 0/unknown (set impression=1)")
+
     ads["timestamp"] = pd.to_datetime(ads["timestamp"], errors="coerce")
     n_bad_ts = ads["timestamp"].isna().sum()
     ads = ads.dropna(subset=["timestamp"])

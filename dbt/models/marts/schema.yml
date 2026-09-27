@@ -1,0 +1,52 @@
+version: 2
+
+models:
+  - name: mart_watch_time
+    description: Daily watch time by genre and device, with day-over-day change.
+    columns:
+      - name: full_date
+        tests: [not_null]
+      - name: total_watch_seconds
+        tests: [not_null]
+
+  - name: mart_completion_rate
+    description: Daily average completion rate by genre.
+    columns:
+      - name: avg_completion_rate
+        tests: [not_null]
+
+  - name: mart_retention
+    description: Daily active users and day-over-day retention rate.
+    columns:
+      - name: full_date
+        tests: [not_null, unique]
+      - name: active_users
+        tests: [not_null]
+
+  - name: mart_subscriber_growth
+    description: Daily new/active/cancelled subscriptions and cumulative growth.
+    columns:
+      - name: full_date
+        tests: [not_null, unique]
+
+  - name: mart_ad_performance
+    description: >
+      Daily ad fill rate, CTR, and estimated CPM revenue by campaign.
+      ad_fill_rate/ctr are legitimately null when a campaign had zero
+      impressions that day (nothing to compute a rate from) - not a
+      data quality issue, so no not_null test here. The range check
+      below still guards against impossible values (e.g. CTR > 1).
+
+  - name: mart_content_performance
+    description: Per-content view counts, watch time, and completions.
+    columns:
+      - name: content_id
+        tests: [not_null, unique]
+
+  - name: mart_engagement_daily
+    description: Per-user daily engagement aggregate (watch time, sessions, completion rate).
+    columns:
+      - name: user_key
+        tests: [not_null]
+      - name: date_key
+        tests: [not_null]

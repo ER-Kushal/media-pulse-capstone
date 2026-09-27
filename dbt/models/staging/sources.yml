@@ -1,0 +1,39 @@
+version: 2
+
+sources:
+  - name: mediapulse_warehouse
+    schema: public
+    description: >
+      The Postgres star schema loaded by ingestion/load_warehouse.py
+      (dimensions + fact tables). dbt treats this as its source layer
+      and builds the governed analytical marts on top of it.
+    tables:
+      - name: dim_user
+      - name: dim_content
+      - name: dim_device
+      - name: dim_geography
+      - name: dim_campaign
+      - name: dim_date
+      - name: fact_view
+      - name: fact_ad
+      - name: fact_subscription
+
+models:
+  - name: stg_dim_user
+    description: Cleaned pass-through of dim_user for use by mart models.
+  - name: stg_dim_content
+    description: Cleaned pass-through of dim_content.
+  - name: stg_dim_device
+    description: Cleaned pass-through of dim_device.
+  - name: stg_dim_geography
+    description: Cleaned pass-through of dim_geography.
+  - name: stg_dim_campaign
+    description: Cleaned pass-through of dim_campaign.
+  - name: stg_dim_date
+    description: Cleaned pass-through of dim_date.
+  - name: stg_fact_view
+    description: Cleaned pass-through of fact_view.
+  - name: stg_fact_ad
+    description: Cleaned pass-through of fact_ad.
+  - name: stg_fact_subscription
+    description: Cleaned pass-through of fact_subscription.
