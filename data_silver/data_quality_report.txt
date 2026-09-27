@@ -1,0 +1,71 @@
+
+======================================================================
+MEDIAPULSE BRONZE -> SILVER CLEANING RUN
+======================================================================
+Run time: 2026-09-26T11:24:12.670422+00:00 UTC
+
+======================================================================
+Cleaning users_raw.csv
+======================================================================
+[users] removed 25 duplicate rows (by user_id)
+[users] normalized region casing, 39 missing/'Unknown' -> 'Unknown'
+[users] normalized device casing, 29 missing -> 'Unknown'
+[users] normalized subscription_type casing, 25 missing -> 'Unknown'
+[users] 1027 raw rows -> 1002 clean rows
+
+======================================================================
+Cleaning content_raw.csv
+======================================================================
+[content] removed 10 duplicate rows (by content_id)
+[content] 1 negative durations nulled, 6 missing durations filled with median (55 min)
+[content] 2 unparsable release_date values set to null
+[content] 262 raw rows -> 252 clean rows
+
+======================================================================
+Cleaning views_raw.csv
+======================================================================
+[views] removed 250 duplicate rows (by event_id)
+[views] dropped 100 rows with unknown user_id, 58 rows with unknown content_id
+[views] lowercased event_type, 177 missing -> 'unknown'
+[views] 78 negative watch_seconds nulled, 41 implausibly large (>6h) nulled, 465 total now null (kept as null, not imputed, to avoid biasing watch-time KPIs)
+[views] dropped 150 rows with unparsable timestamp
+[views] 20250 raw rows -> 19692 clean rows
+
+======================================================================
+Cleaning ads_raw.csv
+======================================================================
+[ads] removed 120 duplicate rows (by ad_event_id)
+[ads] dropped 80 rows with unknown user_id, 0 rows with unknown content_id
+[ads] impression: 58 invalid values (e.g. -1, 2) set to null
+[ads] click: 59 invalid values (e.g. -1, 2) set to null
+[ads] dropped 150 rows with unparsable/missing timestamp
+[ads] 99 missing campaign_id -> 'UNKNOWN'
+[ads] 10120 raw rows -> 9770 clean rows
+
+======================================================================
+Cleaning subscriptions_raw.csv
+======================================================================
+[subscriptions] removed 70 duplicate rows (by subscription_id)
+[subscriptions] dropped 90 rows with unknown user_id
+[subscriptions] normalized plan values (incl. 'PREM'->Premium, 'Gold'->Premium), 42 missing -> 'Unknown'
+[subscriptions] normalized status casing, 35 missing -> 'unknown'
+[subscriptions] 97 unparsable start_date values set to null (rows kept)
+[subscriptions] 2570 raw rows -> 2410 clean rows
+
+======================================================================
+Cleaning support_raw.csv
+======================================================================
+[support] removed 60 duplicate rows (by ticket_id)
+[support] dropped 90 rows with unknown user_id
+[support] dropped 99 rows with unparsable created_at
+[support] 3060 raw rows -> 2811 clean rows
+
+======================================================================
+Writing Silver CSVs
+======================================================================
+wrote data_silver\users_silver.csv (1002 rows)
+wrote data_silver\content_silver.csv (252 rows)
+wrote data_silver\views_silver.csv (19692 rows)
+wrote data_silver\ads_silver.csv (9770 rows)
+wrote data_silver\subscriptions_silver.csv (2410 rows)
+wrote data_silver\support_silver.csv (2811 rows)

@@ -1,0 +1,1003 @@
+user_id,subscription_type,region,device,source_file,ingested_at
+U00001,Basic,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00002,Free,West,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00003,Premium,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00004,Basic,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00005,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00006,Family,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00007,Free,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00008,Basic,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00009,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00010,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00011,Free,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00012,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00013,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00014,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00015,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00016,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00017,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00018,Free,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00019,Basic,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00020,Family,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00021,Family,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00022,Free,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00023,Free,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00024,Free,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00025,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00026,Premium,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00027,Family,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00028,Basic,Central,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00029,Family,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00030,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00031,Free,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00032,Free,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00033,Free,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00034,Premium,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00035,Premium,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00036,Premium,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00037,Free,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00038,Basic,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00039,Premium,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00040,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00041,Basic,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00042,Premium,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00043,Basic,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00044,Premium,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00045,Free,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00046,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00047,Free,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00048,Premium,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00049,Free,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00050,Premium,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00051,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00052,Family,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00053,Premium,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00054,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00055,Unknown,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00056,Free,Central,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00057,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00058,Basic,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00059,Premium,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00060,Premium,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00061,Premium,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00062,Free,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00063,Basic,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00064,Family,Central,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00065,Free,South,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00066,Premium,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00067,Family,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00068,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00069,Family,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00070,Free,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00071,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00072,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00073,Family,Central,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00074,Premium,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00075,Premium,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00076,Premium,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00077,Premium,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00078,Basic,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00079,Basic,North,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00080,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00081,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00082,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00083,Basic,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00084,Unknown,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00085,Premium,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00086,Free,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00087,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00088,Unknown,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00089,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00090,Family,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00091,Premium,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00092,Basic,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00093,Basic,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00094,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00095,Basic,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00096,Premium,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00097,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00098,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00099,Free,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00100,Premium,North,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00101,Basic,Unknown,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00102,Basic,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00103,Basic,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00104,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00105,Basic,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00106,Free,Central,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00107,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00108,Basic,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00109,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00110,Unknown,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00111,Basic,South,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00112,Family,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00113,Premium,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00114,Family,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00115,Premium,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00116,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00117,Free,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00118,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00119,Basic,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00120,Premium,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00121,Family,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00122,Free,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00123,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00124,Basic,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00125,Unknown,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00126,Premium,Central,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00127,Premium,Unknown,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00128,Basic,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00129,Basic,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00130,Premium,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00131,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00132,Premium,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00133,Free,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00134,Free,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00135,Family,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00136,Basic,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00137,Premium,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00138,Premium,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00139,Free,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00140,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00141,Family,Central,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00142,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00143,Free,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00144,Family,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00145,Free,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00146,Free,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00147,Free,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00148,Basic,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00149,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00150,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00151,Premium,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00152,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00153,Basic,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00154,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00155,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00156,Family,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00157,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00158,Family,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00159,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00160,Free,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00161,Free,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00162,Basic,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00163,Free,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00164,Family,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00165,Basic,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00166,Free,North,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00167,Free,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00168,Family,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00169,Free,South,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00170,Premium,Unknown,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00171,Premium,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00172,Basic,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00173,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00174,Family,Central,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00175,Family,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00176,Free,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00177,Basic,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00178,Family,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00179,Basic,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00180,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00181,Basic,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00182,Premium,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00183,Family,South,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00184,Premium,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00185,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00186,Basic,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00187,Premium,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00188,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00189,Free,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00190,Family,Central,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00191,Basic,Central,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00192,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00193,Basic,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00194,Family,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00195,Premium,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00196,Basic,North,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00197,Premium,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00198,Family,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00199,Free,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00200,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00201,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00202,Basic,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00203,Family,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00204,Free,Unknown,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00205,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00206,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00207,Premium,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00208,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00209,Free,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00210,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00211,Premium,Unknown,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00212,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00213,Family,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00214,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00215,Basic,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00216,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00217,Free,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00218,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00219,Free,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00220,Free,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00221,Unknown,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00222,Basic,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00223,Premium,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00224,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00225,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00226,Basic,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00227,Free,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00228,Basic,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00229,Family,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00230,Family,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00231,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00232,Basic,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00233,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00234,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00235,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00236,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00237,Basic,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00238,Premium,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00239,Premium,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00240,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00241,Premium,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00242,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00243,Family,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00244,Premium,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00245,Unknown,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00246,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00247,Premium,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00248,Premium,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00249,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00250,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00251,Family,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00252,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00253,Family,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00254,Premium,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00255,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00256,Family,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00257,Family,Central,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00258,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00259,Free,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00260,Free,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00261,Premium,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00262,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00263,Family,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00264,Premium,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00265,Premium,Central,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00266,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00267,Family,Central,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00268,Free,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00269,Free,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00270,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00271,Free,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00272,Premium,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00273,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00274,Premium,Unknown,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00275,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00276,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00277,Basic,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00278,Basic,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00279,Free,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00280,Free,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00281,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00282,Basic,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00283,Family,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00284,Premium,South,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00285,Basic,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00286,Free,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00287,Basic,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00288,Family,Central,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00289,Basic,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00290,Premium,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00291,Premium,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00292,Premium,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00293,Free,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00294,Free,Central,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00295,Premium,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00296,Family,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00297,Family,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00298,Family,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00299,Premium,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00300,Premium,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00301,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00302,Premium,Central,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00303,Basic,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00304,Premium,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00305,Free,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00306,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00307,Free,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00308,Free,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00309,Free,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00310,Premium,Central,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00311,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00312,Premium,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00313,Free,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00314,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00315,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00316,Basic,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00317,Unknown,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00318,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00319,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00320,Free,Unknown,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00321,Basic,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00322,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00323,Premium,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00324,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00325,Premium,Central,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00326,Premium,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00327,Family,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00328,Free,Unknown,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00329,Basic,West,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00330,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00331,Premium,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00332,Free,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00333,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00334,Premium,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00335,Premium,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00336,Basic,West,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00337,Premium,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00338,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00339,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00340,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00341,Premium,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00342,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00343,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00344,Unknown,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00345,Basic,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00346,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00347,Premium,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00348,Premium,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00349,Premium,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00350,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00351,Premium,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00352,Unknown,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00353,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00354,Premium,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00355,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00356,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00357,Free,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00358,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00359,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00360,Family,Central,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00361,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00362,Basic,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00363,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00364,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00365,Free,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00366,Premium,West,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00367,Basic,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00368,Premium,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00369,Basic,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00370,Basic,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00371,Family,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00372,Premium,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00373,Free,Unknown,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00374,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00375,Premium,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00376,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00377,Basic,Central,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00378,Free,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00379,Premium,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00380,Basic,West,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00381,Free,Unknown,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00382,Basic,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00383,Free,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00384,Premium,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00385,Family,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00386,Free,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00387,Family,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00388,Premium,South,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00389,Free,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00390,Premium,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00391,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00392,Free,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00393,Basic,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00394,Premium,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00395,Free,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00396,Premium,Central,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00397,Free,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00398,Basic,East,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00399,Family,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00400,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00401,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00402,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00403,Free,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00404,Free,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00405,Family,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00406,Free,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00407,Basic,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00408,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00409,Premium,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00410,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00411,Basic,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00412,Premium,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00413,Free,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00414,Premium,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00415,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00416,Unknown,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00417,Free,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00418,Premium,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00419,Free,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00420,Free,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00421,Free,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00422,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00423,Premium,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00424,Family,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00425,Free,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00426,Premium,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00427,Basic,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00428,Family,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00429,Premium,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00430,Free,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00431,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00432,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00433,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00434,Free,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00435,Free,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00436,Basic,Unknown,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00437,Basic,Unknown,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00438,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00439,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00440,Family,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00441,Free,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00442,Free,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00443,Basic,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00444,Basic,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00445,Premium,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00446,Free,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00447,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00448,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00449,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00450,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00451,Basic,Unknown,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00452,Family,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00453,Family,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00454,Premium,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00455,Basic,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00456,Free,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00457,Premium,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00458,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00459,Basic,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00460,Free,East,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00461,Free,Unknown,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00462,Free,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00463,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00464,Free,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00465,Free,North,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00466,Family,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00467,Premium,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00468,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00469,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00470,Free,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00471,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00472,Free,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00473,Free,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00474,Free,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00475,Free,Unknown,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00476,Premium,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00477,Basic,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00478,Free,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00479,Family,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00480,Premium,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00481,Free,Central,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00482,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00483,Basic,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00484,Premium,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00485,Basic,Central,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00486,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00487,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00488,Family,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00489,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00490,Free,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00491,Free,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00492,Basic,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00493,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00494,Family,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00495,Free,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00496,Basic,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00497,Basic,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00498,Basic,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00499,Family,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00500,Free,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00501,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00502,Premium,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00503,Free,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00504,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00505,Basic,Unknown,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00506,Free,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00507,Premium,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00508,Basic,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00509,Basic,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00510,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00511,Free,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00512,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00513,Basic,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00514,Family,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00515,Premium,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00516,Premium,Central,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00517,Premium,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00518,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00519,Premium,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00520,Unknown,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00521,Free,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00522,Premium,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00523,Premium,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00524,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00525,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00526,Free,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00527,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00528,Free,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00529,Basic,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00530,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00531,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00532,Family,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00533,Premium,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00534,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00535,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00536,Premium,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00537,Premium,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00538,Unknown,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00539,Free,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00540,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00541,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00542,Basic,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00543,Basic,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00544,Premium,Unknown,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00545,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00546,Basic,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00547,Basic,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00548,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00549,Premium,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00550,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00551,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00552,Unknown,Unknown,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00553,Premium,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00554,Premium,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00555,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00556,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00557,Premium,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00558,Premium,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00559,Premium,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00560,Basic,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00561,Family,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00562,Free,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00563,Family,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00564,Premium,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00565,Premium,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00566,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00567,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00568,Family,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00569,Free,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00570,Premium,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00571,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00572,Basic,Central,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00573,Premium,Central,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00574,Premium,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00575,Family,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00576,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00577,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00578,Unknown,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00579,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00580,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00581,Free,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00582,Free,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00583,Premium,Unknown,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00584,Premium,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00585,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00586,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00587,Premium,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00588,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00589,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00590,Basic,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00591,Basic,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00592,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00593,Premium,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00594,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00595,Family,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00596,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00597,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00598,Basic,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00599,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00600,Basic,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00601,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00602,Unknown,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00603,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00604,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00605,Basic,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00606,Basic,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00607,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00608,Free,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00609,Premium,Unknown,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00610,Premium,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00611,Unknown,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00612,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00613,Family,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00614,Family,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00615,Free,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00616,Premium,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00617,Family,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00618,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00619,Basic,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00620,Basic,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00621,Unknown,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00622,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00623,Free,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00624,Basic,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00625,Premium,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00626,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00627,Free,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00628,Premium,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00629,Basic,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00630,Premium,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00631,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00632,Basic,Central,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00633,Free,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00634,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00635,Premium,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00636,Premium,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00637,Basic,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00638,Free,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00639,Free,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00640,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00641,Premium,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00642,Premium,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00643,Basic,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00644,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00645,Free,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00646,Basic,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00647,Free,Central,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00648,Premium,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00649,Free,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00650,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00651,Basic,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00652,Premium,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00653,Free,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00654,Basic,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00655,Free,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00656,Premium,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00657,Free,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00658,Basic,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00659,Premium,Unknown,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00660,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00661,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00662,Premium,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00663,Basic,Central,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00664,Premium,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00665,Basic,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00666,Premium,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00667,Basic,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00668,Free,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00669,Premium,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00670,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00671,Premium,Central,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00672,Premium,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00673,Unknown,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00674,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00675,Family,East,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00676,Premium,Unknown,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00677,Basic,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00678,Premium,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00679,Premium,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00680,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00681,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00682,Free,Unknown,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00683,Basic,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00684,Free,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00685,Free,Central,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00686,Family,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00687,Premium,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00688,Free,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00689,Basic,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00690,Family,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00691,Premium,North,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00692,Free,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00693,Premium,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00694,Basic,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00695,Premium,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00696,Premium,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00697,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00698,Basic,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00699,Family,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00700,Free,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00701,Free,Unknown,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00702,Premium,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00703,Premium,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00704,Premium,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00705,Basic,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00706,Family,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00707,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00708,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00709,Premium,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00710,Free,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00711,Premium,Central,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00712,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00713,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00714,Family,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00715,Free,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00716,Premium,Unknown,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00717,Basic,Unknown,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00718,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00719,Free,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00720,Premium,Unknown,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00721,Basic,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00722,Free,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00723,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00724,Premium,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00725,Premium,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00726,Free,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00727,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00728,Premium,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00729,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00730,Free,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00731,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00732,Premium,Central,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00733,Family,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00734,Premium,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00735,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00736,Family,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00737,Basic,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00738,Premium,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00739,Unknown,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00740,Unknown,Unknown,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00741,Unknown,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00742,Premium,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00743,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00744,Basic,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00745,Premium,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00746,Free,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00747,Premium,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00748,Free,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00749,Family,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00750,Free,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00751,Premium,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00752,Free,Unknown,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00753,Free,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00754,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00755,Free,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00756,Free,Central,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00757,Basic,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00758,Free,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00759,Family,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00760,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00761,Family,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00762,Family,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00763,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00764,Premium,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00765,Premium,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00766,Premium,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00767,Premium,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00768,Family,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00769,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00770,Basic,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00771,Free,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00772,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00773,Basic,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00774,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00775,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00776,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00777,Premium,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00778,Premium,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00779,Premium,Central,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00780,Basic,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00781,Premium,Central,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00782,Premium,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00783,Free,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00784,Family,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00785,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00786,Free,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00787,Basic,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00788,Premium,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00789,Free,Central,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00790,Family,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00791,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00792,Free,Central,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00793,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00794,Basic,South,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00795,Premium,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00796,Free,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00797,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00798,Family,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00799,Premium,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00800,Free,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00801,Premium,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00802,Family,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00803,Basic,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00804,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00805,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00806,Family,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00807,Premium,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00808,Premium,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00809,Family,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00810,Basic,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00811,Free,Unknown,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00812,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00813,Free,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00814,Free,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00815,Free,Unknown,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00816,Family,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00817,Free,North,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00818,Basic,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00819,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00820,Free,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00821,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00822,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00823,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00824,Premium,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00825,Premium,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00826,Premium,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00827,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00828,Premium,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00829,Basic,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00830,Premium,Unknown,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00831,Free,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00832,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00833,Basic,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00834,Free,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00835,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00836,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00837,Free,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00838,Free,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00839,Family,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00840,Unknown,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00841,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00842,Free,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00843,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00844,Premium,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00845,Basic,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00846,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00847,Premium,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00848,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00849,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00850,Basic,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00851,Free,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00852,Premium,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00853,Unknown,Unknown,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00854,Premium,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00855,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00856,Premium,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00857,Free,West,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00858,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00859,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00860,Family,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00861,Basic,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00862,Free,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00863,Family,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00864,Free,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00865,Family,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00866,Basic,Unknown,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00867,Family,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00868,Free,Central,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00869,Premium,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00870,Free,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00871,Free,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00872,Premium,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00873,Premium,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00874,Free,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00875,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00876,Family,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00877,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00878,Basic,Central,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00879,Family,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00880,Basic,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00881,Family,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00882,Free,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00883,Premium,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00884,Premium,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00885,Premium,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00886,Premium,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00887,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00888,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00889,Free,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00890,Family,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00891,Premium,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00892,Premium,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00893,Premium,South,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00894,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00895,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00896,Free,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00897,Free,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00898,Basic,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00899,Basic,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00900,Family,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00901,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00902,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00903,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00904,Family,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00905,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00906,Basic,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00907,Premium,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00908,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00909,Premium,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00910,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00911,Basic,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00912,Family,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00913,Premium,Unknown,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00914,Basic,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00915,Free,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00916,Free,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00917,Premium,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00918,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00919,Family,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00920,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00921,Basic,East,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00922,Basic,East,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00923,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00924,Basic,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00925,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00926,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00927,Free,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00928,Family,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00929,Basic,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00930,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00931,Free,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00932,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00933,Premium,North,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00934,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00935,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00936,Free,Central,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00937,Free,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00938,Premium,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00939,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00940,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00941,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00942,Basic,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00943,Free,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00944,Free,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00945,Basic,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00946,Premium,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00947,Premium,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00948,Free,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00949,Basic,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00950,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00951,Premium,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00952,Free,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00953,Premium,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00954,Family,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00955,Premium,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00956,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00957,Basic,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00958,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00959,Premium,Central,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00960,Family,Unknown,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00961,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00962,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00963,Family,North,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00964,Free,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00965,Basic,West,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00966,Premium,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00967,Premium,West,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00968,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00969,Basic,South,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00970,Free,West,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00971,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00972,Basic,South,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00973,Premium,West,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00974,Basic,Unknown,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00975,Free,East,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00976,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00977,Family,North,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00978,Free,West,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00979,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00980,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00981,Basic,Central,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00982,Family,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00983,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00984,Unknown,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00985,Premium,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00986,Basic,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00987,Premium,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00988,Free,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00989,Family,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00990,Free,South,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00991,Premium,South,Unknown,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00992,Basic,Central,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00993,Basic,North,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00994,Free,South,Smart TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00995,Premium,West,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00996,Premium,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00997,Free,East,Tablet,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00998,Premium,Unknown,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00999,Basic,East,TV,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U01000,Basic,North,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+U00000,Premium,Unknown,Mobile,users_raw.csv,2026-09-26T11:24:12.713998+00:00
+user-xyz,Basic,South,Web,users_raw.csv,2026-09-26T11:24:12.713998+00:00
