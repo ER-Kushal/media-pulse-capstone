@@ -49,7 +49,7 @@ services:
     container_name: mediapulse_pgadmin
     restart: unless-stopped
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@mediapulse.local
+      PGADMIN_DEFAULT_EMAIL: admin@mediapulse.com
       PGADMIN_DEFAULT_PASSWORD: admin
     ports:
       - "5050:80"
