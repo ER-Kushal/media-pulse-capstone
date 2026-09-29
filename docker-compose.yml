@@ -1,18 +1,43 @@
-version: "3.8"
-
+# Local stack:  docker compose up -d                      -> postgres, pgadmin, kafka, kafka-ui, api
+#               docker compose --profile airflow up -d    -> also starts Airflow (heavier, ~2 GB RAM)
 services:
   postgres:
     image: postgres:16
     container_name: mediapulse_postgres
     restart: unless-stopped
     environment:
-      POSTGRES_USER: mediapulse
-      POSTGRES_PASSWORD: mediapulse_dev_pw
-      POSTGRES_DB: mediapulse
+      POSTGRES_USER: ${POSTGRES_USER:-mediapulse}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-mediapulse_dev_pw}
+      POSTGRES_DB: ${POSTGRES_DB:-mediapulse}
     ports:
       - "5432:5432"
     volumes:
       - mediapulse_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-mediapulse}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build: .
+    container_name: mediapulse_api
+    restart: unless-stopped
+    environment:
+      PGHOST: postgres
+      PGPORT: "5432"
+      PGUSER: ${POSTGRES_USER:-mediapulse}
+      PGPASSWORD: ${POSTGRES_PASSWORD:-mediapulse_dev_pw}
+      PGDATABASE: ${POSTGRES_DB:-mediapulse}
+      JWT_SECRET: ${JWT_SECRET:-dev-only-change-me}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-admin123}
+      ANALYST_PASSWORD: ${ANALYST_PASSWORD:-analyst123}
+      VIEWER_PASSWORD: ${VIEWER_PASSWORD:-viewer123}
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
 
   kafka:
     image: apache/kafka:3.7.0
@@ -49,12 +74,38 @@ services:
     container_name: mediapulse_pgadmin
     restart: unless-stopped
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@mediapulse.com
-      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL:-admin@mediapulse.com}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD:-admin}
     ports:
       - "5050:80"
     depends_on:
       - postgres
+
+  airflow:
+    profiles: ["airflow"]
+    build:
+      context: .
+      dockerfile: airflow/Dockerfile
+    container_name: mediapulse_airflow
+    restart: unless-stopped
+    command: standalone
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      AIRFLOW__CORE__DAGS_FOLDER: /opt/project/airflow/dags
+      PROJECT_DIR: /opt/project
+      PGHOST: postgres
+      PGPORT: "5432"
+      PGUSER: ${POSTGRES_USER:-mediapulse}
+      PGPASSWORD: ${POSTGRES_PASSWORD:-mediapulse_dev_pw}
+      PGDATABASE: ${POSTGRES_DB:-mediapulse}
+      SLACK_WEBHOOK_URL: ${SLACK_WEBHOOK_URL:-}
+    volumes:
+      - ./:/opt/project
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
 
 volumes:
   mediapulse_pgdata:

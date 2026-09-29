@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: mediapulse
+          POSTGRES_PASSWORD: ci_password          # throwaway CI-only database, not a real secret
+          POSTGRES_DB: mediapulse
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd="pg_isready -U mediapulse" --health-interval=5s
+          --health-timeout=5s --health-retries=10
+    env:
+      PGHOST: localhost
+      PGPORT: "5432"
+      PGUSER: mediapulse
+      PGPASSWORD: ci_password
+      PGDATABASE: mediapulse
+      PYTHON: python
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Syntax check all Python
+        run: python -m compileall -q ingestion ml automation api scripts kafka airflow
+      - name: Run the full pipeline (clean -> load -> dbt run + tests -> ML -> alerts)
+        run: bash scripts/run_all.sh full
+      - name: API test suite
+        working-directory: api
+        run: pytest -v
+      - name: Build API Docker image
+        run: docker build -t mediapulse-api .

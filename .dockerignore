@@ -1,0 +1,15 @@
+.git
+data
+data_silver
+dbt
+ml
+automation
+kafka
+airflow
+docs
+scripts
+ops
+**/__pycache__
+**/*.pyc
+logs
+.env
