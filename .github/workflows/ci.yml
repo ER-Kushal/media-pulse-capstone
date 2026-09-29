@@ -40,6 +40,6 @@ jobs:
         run: bash scripts/run_all.sh full
       - name: API test suite
         working-directory: api
-        run: pytest -v
+        run: python -m pytest -v
       - name: Build API Docker image
         run: docker build -t mediapulse-api .
