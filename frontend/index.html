@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MediaPulse - Audience Intelligence</title>
+<!-- React 18 + Chart.js from CDN: no npm/build step needed. The FastAPI server serves this file. -->
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root { --bg:#0f172a; --panel:#1e293b; --panel2:#273449; --text:#e2e8f0; --muted:#94a3b8; --accent:#6366f1;
+          --good:#22c55e; --warn:#f59e0b; --bad:#ef4444; --border:#334155; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--text); }
+  a { color:#a5b4fc; }
+  header { display:flex; align-items:center; gap:16px; padding:10px 20px; background:var(--panel); border-bottom:1px solid var(--border);
+           position:sticky; top:0; z-index:10; flex-wrap:wrap; }
+  header h1 { font-size:18px; margin:0; letter-spacing:.5px; }
+  header h1 span { color:var(--accent); }
+  nav { display:flex; gap:4px; overflow-x:auto; flex:1; }
+  nav button { background:none; border:0; color:var(--muted); padding:8px 12px; border-radius:8px; cursor:pointer; font-size:14px; white-space:nowrap; }
+  nav button:hover { background:var(--panel2); color:var(--text); }
+  nav button.active { background:var(--accent); color:#fff; }
+  .userbox { display:flex; align-items:center; gap:10px; font-size:13px; color:var(--muted); }
+  main { padding:20px; max-width:1400px; margin:0 auto; }
+  .toolbar { display:flex; align-items:center; gap:12px; margin-bottom:16px; flex-wrap:wrap; }
+  .toolbar h2 { margin:0; font-size:22px; flex:1; min-width:180px; }
+  .live { display:flex; align-items:center; gap:8px; font-size:13px; color:var(--muted); }
+  .dot { width:10px; height:10px; border-radius:50%; background:var(--muted); }
+  .dot.on { background:var(--good); box-shadow:0 0 0 0 rgba(34,197,94,.7); animation:pulse 1.6s infinite; }
+  @keyframes pulse { 70% { box-shadow:0 0 0 8px rgba(34,197,94,0); } 100% { box-shadow:0 0 0 0 rgba(34,197,94,0); } }
+  button.btn { background:var(--accent); color:#fff; border:0; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:13px; }
+  button.btn.ghost { background:var(--panel2); color:var(--text); }
+  button.btn:disabled { opacity:.4; cursor:not-allowed; }
+  input, select { background:var(--bg); color:var(--text); border:1px solid var(--border); border-radius:8px; padding:8px 10px; font-size:14px; }
+  .grid { display:grid; gap:14px; }
+  .kpis { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); margin-bottom:14px; }
+  .cols { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); margin-bottom:14px; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:14px 16px; overflow:hidden; }
+  .card h3 { margin:0 0 10px; font-size:14px; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:.5px; }
+  .kpi .v { font-size:26px; font-weight:700; }
+  .kpi .l { font-size:12px; color:var(--muted); margin-top:2px; }
+  .chartbox { position:relative; height:250px; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th, td { text-align:left; padding:7px 8px; border-bottom:1px solid var(--border); }
+  th { color:var(--muted); font-weight:600; position:sticky; top:0; background:var(--panel); }
+  tr.click { cursor:pointer; } tr.click:hover td { background:var(--panel2); }
+  .scroll { max-height:380px; overflow:auto; }
+  .badge { padding:2px 8px; border-radius:999px; font-size:11px; font-weight:700; text-transform:uppercase; }
+  .b-critical,.b-high,.b-fail { background:rgba(239,68,68,.2); color:#fca5a5; }
+  .b-warning,.b-medium,.b-warn { background:rgba(245,158,11,.2); color:#fcd34d; }
+  .b-info,.b-low,.b-pass,.b-open { background:rgba(34,197,94,.18); color:#86efac; }
+  .b-acknowledged,.b-resolved { background:rgba(148,163,184,.2); color:#cbd5e1; }
+  .center { text-align:center; padding:40px 10px; color:var(--muted); }
+  .spinner { width:28px; height:28px; border:3px solid var(--border); border-top-color:var(--accent); border-radius:50%; animation:spin 1s linear infinite; margin:0 auto 10px; }
+  @keyframes spin { to { transform:rotate(360deg); } }
+  .error { background:rgba(239,68,68,.12); border:1px solid var(--bad); color:#fecaca; border-radius:10px; padding:14px; margin-bottom:14px; }
+  .login { max-width:360px; margin:12vh auto; }
+  .login .card { padding:24px; } .login input { width:100%; margin-bottom:12px; }
+  .hint { font-size:12px; color:var(--muted); margin-top:10px; }
+  .back { margin-bottom:10px; }
+  .row { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-bottom:12px; }
+  .score { font-size:44px; font-weight:800; }
+  small.mut { color:var(--muted); }
+  pre.audit { background:var(--bg); padding:8px; border-radius:8px; font-size:11px; overflow:auto; max-height:160px; margin:6px 0 0; }
+  @media (max-width: 640px) { main { padding:12px; } .kpi .v { font-size:22px; } .cols { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel">
+const { useState, useEffect, useRef, useCallback } = React;
+
+/* ---------------------------------------------------------------- API client */
+const TOKEN_KEY = "mp_token";
+const api = {
+  token: sessionStorage.getItem(TOKEN_KEY),
+  user: JSON.parse(sessionStorage.getItem("mp_user") || "null"),
+  async request(path, opts = {}) {
+    const res = await fetch("/api" + path, {
+      ...opts,
+      headers: { ...(opts.headers || {}), ...(this.token ? { Authorization: "Bearer " + this.token } : {}) },
+    });
+    if (res.status === 401) { api.logout(); throw new Error("Session expired - please sign in again"); }
+    const body = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(typeof body.detail === "string" ? body.detail : (body.error || "Request failed (" + res.status + ")"));
+    return body;
+  },
+  get(path) { return this.request(path); },
+  post(path, json) { return this.request(path, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(json || {}) }); },
+  async login(username, password) {
+    const res = await fetch("/api/auth/login", { method: "POST", body: new URLSearchParams({ username, password }) });
+    const body = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(body.detail || "Login failed");
+    this.token = body.access_token; this.user = { username: body.username, role: body.role };
+    sessionStorage.setItem(TOKEN_KEY, this.token); sessionStorage.setItem("mp_user", JSON.stringify(this.user));
+    return this.user;
+  },
+  logout() { this.token = null; this.user = null; sessionStorage.clear(); window.dispatchEvent(new Event("mp-logout")); },
+};
+
+/* ---------------------------------------------------------------- helpers */
+const nf = (n, d = 0) => n == null ? "-" : Number(n).toLocaleString(undefined, { maximumFractionDigits: d });
+const pct = (n, d = 1) => n == null ? "-" : (Number(n) * 100).toFixed(d) + "%";
+const dt = (s) => s ? new Date(s).toLocaleString() : "-";
+const shortDate = (s) => s ? String(s).slice(5, 10) : "";
+const Badge = ({ v }) => <span className={"badge b-" + v}>{v}</span>;
+
+function useApi(path, deps = [], tick = 0) {
+  const [state, setState] = useState({ data: null, loading: true, error: null });
+  const load = useCallback(() => {
+    if (!path) return;
+    setState((s) => ({ ...s, loading: s.data == null, error: null }));
+    api.get(path).then((data) => setState({ data, loading: false, error: null }))
+      .catch((error) => setState((s) => ({ data: s.data, loading: false, error: error.message })));
+  }, [path]);
+  useEffect(load, [load, tick, ...deps]);
+  return { ...state, reload: load };
+}
+
+/* ---------------------------------------------------------------- UI atoms */
+const Loading = () => <div className="center"><div className="spinner" />Loading…</div>;
+const ErrorBox = ({ error, onRetry }) => (
+  <div className="error">⚠ {error} {onRetry && <button className="btn ghost" style={{ marginLeft: 10 }} onClick={onRetry}>Retry</button>}</div>
+);
+const Kpi = ({ label, value, sub }) => (
+  <div className="card kpi"><div className="v">{value}</div><div className="l">{label}</div>{sub && <small className="mut">{sub}</small>}</div>
+);
+
+function ChartCard({ title, type = "line", labels, datasets, height = 250, options = {} }) {
+  const ref = useRef(null); const chartRef = useRef(null);
+  useEffect(() => {
+    if (chartRef.current) chartRef.current.destroy();
+    if (!ref.current || !labels) return;
+    chartRef.current = new Chart(ref.current, {
+      type, data: { labels, datasets: datasets.map((d, i) => ({
+        borderColor: ["#6366f1", "#22c55e", "#f59e0b", "#ef4444"][i % 4],
+        backgroundColor: type === "line" ? "rgba(99,102,241,.15)" : ["#6366f1", "#22c55e", "#f59e0b", "#ef4444", "#06b6d4", "#a855f7", "#ec4899", "#84cc16"],
+        tension: .3, pointRadius: 2, fill: type === "line" && i === 0, ...d })) },
+      options: { responsive: true, maintainAspectRatio: false, ...options,
+        plugins: { legend: { labels: { color: "#94a3b8" }, display: datasets.length > 1 || type === "doughnut" }, ...(options.plugins || {}) },
+        scales: type === "doughnut" ? {} : { x: { ticks: { color: "#94a3b8", maxTicksLimit: 8 }, grid: { color: "#334155" } },
+                                              y: { ticks: { color: "#94a3b8" }, grid: { color: "#334155" }, beginAtZero: true } } },
+    });
+    return () => chartRef.current && chartRef.current.destroy();
+  }, [JSON.stringify(labels), JSON.stringify(datasets), type]);
+  return <div className="card"><h3>{title}</h3><div className="chartbox" style={{ height }}><canvas ref={ref} /></div></div>;
+}
+
+function Page({ title, children, live, tick, setLive, reload, updated }) {
+  return (
+    <>
+      <div className="toolbar">
+        <h2>{title}</h2>
+        <div className="live"><span className={"dot" + (live ? " on" : "")} />{live ? "LIVE" : "Paused"} · updated {updated}</div>
+        <button className="btn ghost" onClick={() => setLive(!live)}>{live ? "Pause" : "Resume"} auto-refresh</button>
+        <button className="btn" onClick={reload}>Refresh now</button>
+      </div>
+      {children}
+    </>
+  );
+}
+
+/* ---------------------------------------------------------------- Pages */
+function CommandCenter({ tick, go }) {
+  const dash = useApi("/dashboard", [], tick), live = useApi("/audience/live?minutes=60", [], tick);
+  const feed = useApi("/events/live?limit=12", [], tick), fc = useApi("/forecasts?history_days=21", [], tick);
+  const risk = useApi("/risk", [], tick);
+  const err = dash.error || live.error || feed.error || fc.error || risk.error;
+  const k = dash.data && dash.data.kpis;
+  return (
+    <>
+      {err && <ErrorBox error={err} onRetry={() => { dash.reload(); live.reload(); feed.reload(); fc.reload(); risk.reload(); }} />}
+      {dash.loading && !dash.data ? <Loading /> : k && (
+        <div className="grid kpis">
+          <Kpi label="Watch time (hours)" value={nf(k.total_watch_hours)} />
+          <Kpi label="Active users" value={nf(k.active_users)} sub={nf(k.total_views) + " views"} />
+          <Kpi label="Completion rate" value={pct(k.completion_rate)} />
+          <Kpi label="Day-over-day retention" value={pct(k.retention_day_over_day)} />
+          <Kpi label="Active subscribers" value={nf(k.subscribers_active)} sub={nf(k.subscribers_lost) + " lost"} />
+          <Kpi label="Ad fill rate" value={pct(k.ad_fill_rate)} />
+          <Kpi label="CTR" value={pct(k.ctr, 2)} />
+          <Kpi label="Est. ad revenue" value={"$" + nf(k.estimated_revenue_usd)} sub="assumed $2 CPM" />
+          <div className="card kpi" style={{ cursor: "pointer" }} onClick={() => go("alerts")}>
+            <div className="v">{nf(Object.values(k.open_alerts).reduce((a, b) => a + b, 0))}</div>
+            <div className="l">Open alerts →</div>
+            <small className="mut">{Object.entries(k.open_alerts).map(([s, n]) => n + " " + s).join(" · ")}</small>
+          </div>
+          {risk.data && <div className="card kpi"><div className="v"><Badge v={risk.data.overall_risk_level} /></div><div className="l">Overall risk level</div>
+            <small className="mut">{Object.entries(risk.data.churn_tiers).map(([t, n]) => n + " " + t).join(" · ")}</small></div>}
+        </div>
+      )}
+      <div className="grid cols">
+        {dash.data && <ChartCard title="Watch time per day (seconds)" labels={dash.data.watch_time_trend.map((d) => shortDate(d.date))}
+          datasets={[{ label: "Watch seconds", data: dash.data.watch_time_trend.map((d) => d.watch_seconds) }]} />}
+        {fc.data && <ChartCard title="Forecast: next 7 days" labels={[...fc.data.history.map((d) => shortDate(d.date)), ...fc.data.forecast.map((d) => shortDate(d.date))]}
+          datasets={[{ label: "Actual", data: [...fc.data.history.map((d) => d.watch_seconds), ...fc.data.forecast.map(() => null)] },
+                     { label: "Forecast", borderDash: [6, 4], fill: false, data: [...fc.data.history.map(() => null), ...fc.data.forecast.map((d) => d.predicted_watch_seconds)] }]} />}
+        {dash.data && <ChartCard title="Watch time by genre" type="bar" labels={dash.data.watch_time_by_genre.map((g) => g.genre)}
+          datasets={[{ label: "Watch seconds", data: dash.data.watch_time_by_genre.map((g) => g.watch_seconds) }]} />}
+        {dash.data && <ChartCard title="Cumulative subscribers" labels={dash.data.subscriber_growth.map((d) => shortDate(d.date))}
+          datasets={[{ label: "Subscribers", data: dash.data.subscriber_growth.map((d) => d.cumulative_subscriptions) }]} />}
+      </div>
+      <div className="grid cols">
+        <div className="card"><h3>Live audience</h3>
+          {live.loading && !live.data ? <Loading /> : live.data && (<>
+            <div className="row"><div><div className="score">{nf(live.data.concurrent_users_now)}</div><small className="mut">concurrent users (last {live.data.window_minutes} min)</small></div>
+              <div><div className="score">{nf(live.data.users_in_window_before_latest_event)}</div><small className="mut">users in the {live.data.window_minutes} min before the newest event</small></div></div>
+            <small className="mut">{live.data.is_live ? "🟢 Kafka stream is feeding live data" : "⚪ No live events right now (start kafka/producer.py to stream). Newest event: " + dt(live.data.latest_event_at)}</small>
+            <table style={{ marginTop: 10 }}><thead><tr><th>Device</th><th>Users</th></tr></thead>
+              <tbody>{live.data.by_device.map((d) => <tr key={d.device_name}><td>{d.device_name}</td><td>{nf(d.users)}</td></tr>)}</tbody></table></>)}
+        </div>
+        <div className="card"><h3>Live event feed</h3>
+          {feed.loading && !feed.data ? <Loading /> : feed.data && <div className="scroll"><table><thead><tr><th>Time</th><th>Type</th><th>User</th><th>Content</th><th>Detail</th></tr></thead>
+            <tbody>{feed.data.events.map((e) => <tr key={e.kind + e.id}><td>{dt(e.ts)}</td><td>{e.kind}</td><td>{e.user_id}</td><td>{e.content_id}</td><td>{e.detail}</td></tr>)}</tbody></table></div>}
+        </div>
+      </div>
+    </>
+  );
+}
+
+function ContentAnalytics({ tick }) {
+  const [genre, setGenre] = useState(""); const [sel, setSel] = useState(null);
+  const list = useApi("/content?limit=25" + (genre ? "&genre=" + encodeURIComponent(genre) : ""), [genre], tick);
+  const detail = useApi(sel ? "/content/" + sel + "/performance" : null, [sel], tick);
+  const genres = useApi("/dashboard", [], 0);
+  if (sel) return (
+    <>
+      <button className="btn ghost back" onClick={() => setSel(null)}>← Back to list</button>
+      {detail.error && <ErrorBox error={detail.error} onRetry={detail.reload} />}
+      {detail.loading && !detail.data ? <Loading /> : detail.data && (<>
+        <h3 style={{ margin: "0 0 12px" }}>{detail.data.content_id} <small className="mut">· {detail.data.genre} · {detail.data.language}</small></h3>
+        <div className="grid kpis">
+          <Kpi label="Rank by watch time" value={"#" + detail.data.rank_by_watch_time} sub={"of " + detail.data.total_titles} />
+          <Kpi label="Total views" value={nf(detail.data.total_views)} />
+          <Kpi label="Unique viewers" value={nf(detail.data.unique_viewers)} />
+          <Kpi label="Avg watch (s)" value={nf(detail.data.avg_watch_seconds)} />
+          <Kpi label="Completion rate" value={pct(detail.data.completion_rate)} />
+          <Kpi label="Completions" value={nf(detail.data.completions)} />
+        </div>
+        <ChartCard title="Views per day" labels={detail.data.daily_trend.map((d) => shortDate(d.date))}
+          datasets={[{ label: "Views", data: detail.data.daily_trend.map((d) => d.views) }]} />
+      </>)}
+    </>
+  );
+  return (
+    <>
+      <div className="row"><input placeholder="Filter by genre (e.g. Drama)" value={genre} onChange={(e) => setGenre(e.target.value)} />
+        <small className="mut">Click a title to drill down</small></div>
+      {list.error && <ErrorBox error={list.error} onRetry={list.reload} />}
+      {list.loading && !list.data ? <Loading /> : list.data && (
+        <div className="card"><div className="scroll"><table><thead><tr><th>Content</th><th>Genre</th><th>Language</th><th>Views</th><th>Watch seconds</th><th>Viewers</th><th>Completions</th></tr></thead>
+          <tbody>{list.data.length === 0 && <tr><td colSpan="7" className="center">No content matches this filter</td></tr>}
+            {list.data.map((c) => <tr key={c.content_id} className="click" onClick={() => setSel(c.content_id)}>
+              <td>{c.content_id}</td><td>{c.genre}</td><td>{c.language}</td><td>{nf(c.total_views)}</td><td>{nf(c.total_watch_seconds)}</td><td>{nf(c.unique_viewers)}</td><td>{nf(c.completions)}</td></tr>)}</tbody></table></div></div>
+      )}
+    </>
+  );
+}
+
+function Monetization({ tick }) {
+  const camps = useApi("/campaigns?limit=200", [], tick), dash = useApi("/dashboard", [], tick);
+  const k = dash.data && dash.data.kpis;
+  const [sortBy, setSortBy] = useState("impressions");
+  const err = camps.error || dash.error;
+  const sorted = camps.data ? [...camps.data].sort((a, b) => Number(b[sortBy] || 0) - Number(a[sortBy] || 0)) : [];
+  return (
+    <>
+      {err && <ErrorBox error={err} onRetry={() => { camps.reload(); dash.reload(); }} />}
+      {k && <div className="grid kpis"><Kpi label="Ad fill rate" value={pct(k.ad_fill_rate)} /><Kpi label="CTR" value={pct(k.ctr, 2)} />
+        <Kpi label="Est. revenue" value={"$" + nf(k.estimated_revenue_usd)} sub="CPM assumed at $2.00 (no revenue in source data)" /></div>}
+      {camps.loading && !camps.data ? <Loading /> : camps.data && (<>
+        <ChartCard title="Top 12 campaigns by impressions" type="bar" labels={sorted.slice(0, 12).map((c) => c.campaign_id)}
+          datasets={[{ label: "Impressions", data: sorted.slice(0, 12).map((c) => c.impressions) }]} />
+        <div className="row" style={{ marginTop: 14 }}><span>Sort by</span>
+          <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+            <option value="impressions">Impressions</option><option value="clicks">Clicks</option><option value="ctr">CTR</option>
+            <option value="ad_fill_rate">Fill rate</option><option value="estimated_revenue_usd">Revenue</option></select></div>
+        <div className="card"><div className="scroll"><table><thead><tr><th>Campaign</th><th>Opportunities</th><th>Impressions</th><th>Clicks</th><th>Fill rate</th><th>CTR</th><th>Est. revenue</th></tr></thead>
+          <tbody>{sorted.map((c) => <tr key={c.campaign_id}><td>{c.campaign_id}</td><td>{nf(c.ad_opportunities)}</td><td>{nf(c.impressions)}</td><td>{nf(c.clicks)}</td>
+            <td>{pct(c.ad_fill_rate)}</td><td>{pct(c.ctr, 2)}</td><td>${nf(c.estimated_revenue_usd, 2)}</td></tr>)}</tbody></table></div></div></>)}
+    </>
+  );
+}
+
+function Subscriber360({ tick }) {
+  const [tier, setTier] = useState("high"); const [uid, setUid] = useState(""); const [sel, setSel] = useState(null);
+  const list = useApi("/churn-risk?limit=30" + (tier ? "&tier=" + tier : ""), [tier], tick);
+  const detail = useApi(sel ? "/subscriber/" + sel + "/health" : null, [sel], tick);
+  if (sel) {
+    const d = detail.data;
+    return (<>
+      <button className="btn ghost back" onClick={() => setSel(null)}>← Back to list</button>
+      {detail.error && <ErrorBox error={detail.error} onRetry={detail.reload} />}
+      {detail.loading && !d ? <Loading /> : d && (<>
+        <div className="grid kpis">
+          <div className="card kpi"><div className="score" style={{ color: d.health_label === "healthy" ? "var(--good)" : d.health_label === "at_risk" ? "var(--warn)" : "var(--bad)" }}>{d.health_score ?? "-"}</div>
+            <div className="l">Health score · {d.health_label || "no score"}</div></div>
+          <Kpi label="Churn probability" value={d.churn_risk ? pct(d.churn_risk.churn_probability) : "-"} sub={d.churn_risk && d.churn_risk.risk_tier + " risk"} />
+          <Kpi label="Total watch (s)" value={nf(d.engagement.total_watch_seconds)} />
+          <Kpi label="Sessions" value={nf(d.engagement.sessions)} />
+          <Kpi label="Avg completion" value={pct(d.engagement.avg_completion_rate)} />
+          <Kpi label="Days inactive" value={nf(d.engagement.days_since_last_active)} />
+        </div>
+        <div className="grid cols">
+          <div className="card"><h3>Profile</h3><table><tbody>
+            <tr><td>User</td><td>{d.profile.user_id}</td></tr><tr><td>Plan type</td><td>{d.profile.subscription_type}</td></tr>
+            <tr><td>Region</td><td>{d.profile.region}</td></tr><tr><td>Device</td><td>{d.profile.device}</td></tr>
+            <tr><td>Support tickets</td><td>{d.support ? d.support.total_tickets + (d.support.recent.length ? " (latest: " + d.support.recent[0].issue_type + ")" : "") : "-"}</td></tr>
+            <tr><td>Subscription</td><td>{d.subscription ? d.subscription.plan + " · " + d.subscription.status + " (since " + (d.subscription.start_date || "?") + ")" : "none"}</td></tr></tbody></table></div>
+          <ChartCard title="Recent daily watch time (s)" labels={d.recent_activity.map((r) => shortDate(r.date))} datasets={[{ label: "Watch seconds", data: d.recent_activity.map((r) => r.total_watch_seconds) }]} height={200} />
+          <div className="card"><h3>Related alerts</h3>{d.related_alerts.length === 0 ? <small className="mut">No alerts for this subscriber</small> :
+            <table><tbody>{d.related_alerts.map((a) => <tr key={a.alert_id}><td><Badge v={a.severity} /></td><td>{a.alert_type}</td><td><Badge v={a.status} /></td></tr>)}</tbody></table>}</div>
+        </div></>)}
+    </>);
+  }
+  return (<>
+    <div className="row">
+      <input placeholder="Look up a user id (e.g. U00010)" value={uid} onChange={(e) => setUid(e.target.value.trim())} />
+      <button className="btn" disabled={!uid} onClick={() => setSel(uid)}>Open Subscriber 360</button>
+      <span style={{ marginLeft: 12 }}>Churn tier</span>
+      <select value={tier} onChange={(e) => setTier(e.target.value)}><option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option><option value="">All</option></select>
+    </div>
+    {list.error && <ErrorBox error={list.error} onRetry={list.reload} />}
+    {list.loading && !list.data ? <Loading /> : list.data && <div className="card"><h3>{nf(list.data.total)} subscribers in this view (top 30 by churn probability)</h3>
+      <div className="scroll"><table><thead><tr><th>User</th><th>Plan</th><th>Region</th><th>Device</th><th>Churn prob.</th><th>Tier</th></tr></thead>
+        <tbody>{list.data.items.map((u) => <tr key={u.user_id} className="click" onClick={() => setSel(u.user_id)}><td>{u.user_id}</td><td>{u.subscription_type}</td><td>{u.region}</td><td>{u.device}</td>
+          <td>{pct(u.churn_probability)}</td><td><Badge v={u.risk_tier} /></td></tr>)}</tbody></table></div></div>}
+  </>);
+}
+
+function Alerts({ tick }) {
+  const [status, setStatus] = useState("open"); const [type, setType] = useState(""); const [sev, setSev] = useState(""); const [open, setOpen] = useState(null);
+  const [busy, setBusy] = useState(null); const [msg, setMsg] = useState(null);
+  const qs = "/alerts?limit=50" + (status ? "&status=" + status : "") + (type ? "&alert_type=" + type : "") + (sev ? "&severity=" + sev : "");
+  const list = useApi(qs, [status, type, sev], tick);
+  const canAck = api.user && ["admin", "analyst"].includes(api.user.role);
+  async function ack(id) {
+    setBusy(id); setMsg(null);
+    try { await api.post("/alerts/" + id + "/acknowledge", { note: "Acknowledged from dashboard" }); setMsg({ ok: true, t: "Alert " + id + " acknowledged" }); list.reload(); }
+    catch (e) { setMsg({ ok: false, t: e.message }); } finally { setBusy(null); }
+  }
+  return (<>
+    <div className="row">
+      <select value={status} onChange={(e) => setStatus(e.target.value)}><option value="">Any status</option><option value="open">Open</option><option value="acknowledged">Acknowledged</option><option value="resolved">Resolved</option></select>
+      <select value={type} onChange={(e) => setType(e.target.value)}><option value="">Any type</option><option value="content_alert">Content (engagement drop)</option><option value="monetization_alert">Monetization (ad anomaly)</option>
+        <option value="retention_campaign">Retention (churn risk)</option><option value="editorial_notification">Editorial (trend surge)</option></select>
+      <select value={sev} onChange={(e) => setSev(e.target.value)}><option value="">Any severity</option><option value="critical">Critical</option><option value="warning">Warning</option><option value="info">Info</option></select>
+      {!canAck && <small className="mut">Your role ({api.user && api.user.role}) is read-only - analysts/admins can acknowledge.</small>}
+    </div>
+    {msg && <div className={msg.ok ? "card" : "error"} style={{ marginBottom: 12 }}>{msg.ok ? "✅ " : "⚠ "}{msg.t}</div>}
+    {list.error && <ErrorBox error={list.error} onRetry={list.reload} />}
+    {list.loading && !list.data ? <Loading /> : list.data && <div className="card"><h3>{nf(list.data.total)} alerts match</h3><div className="scroll" style={{ maxHeight: 560 }}>
+      <table><thead><tr><th>#</th><th>Severity</th><th>Type</th><th>Reason</th><th>Owner</th><th>Status</th><th>Raised</th><th></th></tr></thead>
+        <tbody>{list.data.items.length === 0 && <tr><td colSpan="8" className="center">No alerts match these filters 🎉</td></tr>}
+          {list.data.items.map((a) => (<React.Fragment key={a.alert_id}>
+            <tr><td>{a.alert_id}</td><td><Badge v={a.severity} /></td><td>{a.alert_type}</td><td>{a.trigger_reason}{a.notified && " 🔔"}</td><td>{a.owner}</td><td><Badge v={a.status} /></td><td>{dt(a.triggered_at)}</td>
+              <td style={{ whiteSpace: "nowrap" }}><button className="btn ghost" onClick={() => setOpen(open === a.alert_id ? null : a.alert_id)}>Audit</button>{" "}
+                <button className="btn" disabled={!canAck || a.status !== "open" || busy === a.alert_id} onClick={() => ack(a.alert_id)}>{busy === a.alert_id ? "…" : "Acknowledge"}</button></td></tr>
+            {open === a.alert_id && <tr><td colSpan="8"><pre className="audit">{JSON.stringify(a.audit_log, null, 2)}</pre></td></tr>}
+          </React.Fragment>))}</tbody></table></div></div>}
+  </>);
+}
+
+function DataQuality({ tick }) {
+  const q = useApi("/data-quality", [], tick);
+  return (<>
+    {q.error && <ErrorBox error={q.error} onRetry={q.reload} />}
+    {q.loading && !q.data ? <Loading /> : q.data && (<>
+      <div className="grid kpis"><div className="card kpi"><div className="v"><Badge v={q.data.overall_status} /></div><div className="l">Overall status</div></div>
+        <Kpi label="Checks passed" value={q.data.summary.pass} /><Kpi label="Warnings" value={q.data.summary.warn} /><Kpi label="Failures" value={q.data.summary.fail} /></div>
+      <div className="grid cols">
+        <div className="card"><h3>Checks</h3><table><thead><tr><th>Check</th><th>Category</th><th>Value</th><th>Rule</th><th>Status</th></tr></thead>
+          <tbody>{q.data.checks.map((c) => <tr key={c.check}><td>{c.check}</td><td>{c.category}</td><td>{String(c.value)}</td><td>{c.threshold}</td><td><Badge v={c.status} /></td></tr>)}</tbody></table></div>
+        <div className="card"><h3>Row counts</h3><table><tbody>{Object.entries(q.data.row_counts).map(([t, n]) => <tr key={t}><td>{t}</td><td>{nf(n)}</td></tr>)}</tbody></table>
+          <h3 style={{ marginTop: 16 }}>Recent pipeline runs (Airflow)</h3>
+          {q.data.recent_pipeline_runs.length === 0 ? <small className="mut">No runs logged yet</small> :
+            <table><tbody>{q.data.recent_pipeline_runs.map((r, i) => <tr key={i}><td>{r.task_id}</td><td><Badge v={r.status === "success" ? "pass" : "fail"} /></td><td>{dt(r.logged_at)}</td></tr>)}</tbody></table>}</div>
+      </div></>)}
+  </>);
+}
+
+/* ---------------------------------------------------------------- shell */
+function Login({ onDone }) {
+  const [u, setU] = useState("admin"); const [p, setP] = useState(""); const [err, setErr] = useState(null); const [busy, setBusy] = useState(false);
+  async function submit(e) { e.preventDefault(); setBusy(true); setErr(null);
+    try { onDone(await api.login(u, p)); } catch (x) { setErr(x.message); } finally { setBusy(false); } }
+  return (<div className="login"><div className="card"><h1 style={{ marginTop: 0 }}>Media<span style={{ color: "var(--accent)" }}>Pulse</span></h1>
+    <p style={{ color: "var(--muted)", marginTop: -8 }}>Audience intelligence platform</p>
+    {err && <div className="error">{err}</div>}
+    <form onSubmit={submit}><input placeholder="Username" value={u} onChange={(e) => setU(e.target.value)} autoFocus />
+      <input type="password" placeholder="Password" value={p} onChange={(e) => setP(e.target.value)} />
+      <button className="btn" style={{ width: "100%" }} disabled={busy || !u || !p}>{busy ? "Signing in…" : "Sign in"}</button></form>
+    <div className="hint">Demo accounts: admin / admin123 · analyst / analyst123 · viewer / viewer123</div></div></div>);
+}
+
+const PAGES = [["command", "Audience Command Center", CommandCenter], ["content", "Content Analytics", ContentAnalytics],
+  ["money", "Monetization", Monetization], ["subscriber", "Subscriber 360", Subscriber360],
+  ["alerts", "Engagement Alerts", Alerts], ["quality", "Data Quality", DataQuality]];
+
+function App() {
+  const [user, setUser] = useState(api.user); const [page, setPage] = useState("command");
+  const [live, setLive] = useState(true); const [tick, setTick] = useState(0); const [updated, setUpdated] = useState(new Date().toLocaleTimeString());
+  useEffect(() => { const h = () => setUser(null); window.addEventListener("mp-logout", h); return () => window.removeEventListener("mp-logout", h); }, []);
+  useEffect(() => { if (!live || !user) return; const id = setInterval(() => { setTick((t) => t + 1); setUpdated(new Date().toLocaleTimeString()); }, 15000); return () => clearInterval(id); }, [live, user]);
+  if (!user) return <Login onDone={setUser} />;
+  const Current = PAGES.find((p) => p[0] === page)[2];
+  const title = PAGES.find((p) => p[0] === page)[1];
+  const reload = () => { setTick((t) => t + 1); setUpdated(new Date().toLocaleTimeString()); };
+  return (<>
+    <header><h1>Media<span>Pulse</span></h1>
+      <nav>{PAGES.map(([id, label]) => <button key={id} className={page === id ? "active" : ""} onClick={() => setPage(id)}>{label}</button>)}</nav>
+      <div className="userbox"><span>{user.username} · <Badge v={user.role === "viewer" ? "info" : "warning"} /> {user.role}</span>
+        <button className="btn ghost" onClick={() => api.logout()}>Sign out</button></div></header>
+    <main><Page title={title} live={live} setLive={setLive} tick={tick} reload={reload} updated={updated}>
+      <Current tick={tick} go={setPage} /></Page></main>
+  </>);
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>

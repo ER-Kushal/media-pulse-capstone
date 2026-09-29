@@ -16,6 +16,7 @@
 --    cannot reference a user/content/etc. that doesn't exist.
 -- =====================================================================
 
+DROP TABLE IF EXISTS fact_support CASCADE;
 DROP TABLE IF EXISTS fact_engagement CASCADE;
 DROP TABLE IF EXISTS fact_subscription CASCADE;
 DROP TABLE IF EXISTS fact_ad CASCADE;
@@ -156,3 +157,16 @@ CREATE TABLE fact_engagement (
     UNIQUE (user_key, date_key)
 );
 CREATE INDEX idx_fact_engagement_date ON fact_engagement(date_key);
+
+-- One row per support ticket (Subscriber 360 shows these; cleaned from support_raw.csv)
+CREATE TABLE fact_support (
+    support_key     BIGSERIAL PRIMARY KEY,
+    ticket_id       VARCHAR(50) NOT NULL UNIQUE,
+    user_key        INTEGER NOT NULL REFERENCES dim_user(user_key),
+    date_key        INTEGER NOT NULL REFERENCES dim_date(date_key),
+    created_at      TIMESTAMP NOT NULL,
+    issue_type      VARCHAR(50) NOT NULL DEFAULT 'Unknown',
+    loaded_at       TIMESTAMP NOT NULL DEFAULT now(),
+    source_file     VARCHAR(100)
+);
+CREATE INDEX idx_fact_support_user ON fact_support(user_key);

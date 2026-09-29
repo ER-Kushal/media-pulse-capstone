@@ -4,6 +4,10 @@ MediaPulse - Load Silver CSVs into the Postgres warehouse (star schema)
 Run this AFTER bronze_to_silver.py has produced data_silver/*.csv,
 and AFTER schema.sql has been applied to your Postgres database.
 
+INCREMENTAL + IDEMPOTENT: every table is loaded with INSERT ... ON CONFLICT
+DO NOTHING on its business key, so running this twice never duplicates rows
+and never wipes rows that arrived via Kafka.
+
 Usage:
     pip install psycopg2-binary pandas
     python load_warehouse.py
@@ -35,6 +39,23 @@ def load_csv(name):
     return pd.read_csv(os.path.join(SILVER_DIR, name))
 
 
+def insert_ignore(df, table, conflict_cols):
+    """Incremental, idempotent load: rows whose business key already exists are skipped.
+    Data goes into a temp staging table first, then INSERT ... ON CONFLICT DO NOTHING."""
+    if df.empty:
+        return 0
+    tmp = f"_stg_{table}"
+    df.to_sql(tmp, engine, if_exists="replace", index=False)
+    cols = ", ".join(f'"{c}"' for c in df.columns)
+    with engine.begin() as conn:
+        res = conn.execute(text(
+            f'INSERT INTO {table} ({cols}) SELECT {cols} FROM {tmp} '
+            f'ON CONFLICT ({", ".join(conflict_cols)}) DO NOTHING'))
+        inserted = res.rowcount
+        conn.execute(text(f"DROP TABLE {tmp}"))
+    return inserted
+
+
 def build_date_dim(all_dates):
     """all_dates: a pandas Series of datetime64 values (may include NaT)."""
     dates = pd.to_datetime(pd.Series(all_dates)).dropna().dt.normalize().unique()
@@ -59,6 +80,8 @@ def main():
     views = load_csv("views_silver.csv")
     ads = load_csv("ads_silver.csv")
     subs = load_csv("subscriptions_silver.csv")
+    support = load_csv("support_silver.csv")
+    support["created_at"] = pd.to_datetime(support["created_at"])
 
     views["event_timestamp"] = pd.to_datetime(views["timestamp"])
     ads["event_timestamp"] = pd.to_datetime(ads["timestamp"])
@@ -67,40 +90,33 @@ def main():
 
     # -------- dim_date: built from every date appearing anywhere --------
     all_dates = pd.concat([
-        views["event_timestamp"], ads["event_timestamp"], subs["start_date"]
+        views["event_timestamp"], ads["event_timestamp"], subs["start_date"], support["created_at"]
     ])
     dim_date = build_date_dim(all_dates)
-    with engine.begin() as conn:
-        conn.execute(text("TRUNCATE dim_date CASCADE"))
-    dim_date.to_sql("dim_date", engine, if_exists="append", index=False)
-    print(f"  dim_date: {len(dim_date)} rows")
+    n = insert_ignore(dim_date, "dim_date", ["date_key"])
+    print(f"  dim_date: {n} new rows")
 
     # -------- dim_user --------
     dim_user = users.rename(columns={
         "subscription_type": "subscription_type", "region": "region", "device": "device"
     })[["user_id", "subscription_type", "region", "device", "source_file"]]
-    dim_user.to_sql("dim_user", engine, if_exists="append", index=False)
-    print(f"  dim_user: {len(dim_user)} rows")
+    print(f"  dim_user: {insert_ignore(dim_user, 'dim_user', ['user_id'])} new rows")
 
     # -------- dim_content --------
     dim_content = content.rename(columns={"duration": "duration_min"})[
         ["content_id", "genre", "language", "release_date", "duration_min", "source_file"]
     ]
-    dim_content.to_sql("dim_content", engine, if_exists="append", index=False)
-    print(f"  dim_content: {len(dim_content)} rows")
+    print(f"  dim_content: {insert_ignore(dim_content, 'dim_content', ['content_id'])} new rows")
 
     # -------- dim_device / dim_geography / dim_campaign --------
     dim_device = pd.DataFrame({"device_name": users["device"].dropna().unique()})
-    dim_device.to_sql("dim_device", engine, if_exists="append", index=False)
-    print(f"  dim_device: {len(dim_device)} rows")
+    print(f"  dim_device: {insert_ignore(dim_device, 'dim_device', ['device_name'])} new rows")
 
     dim_geo = pd.DataFrame({"region": users["region"].dropna().unique()})
-    dim_geo.to_sql("dim_geography", engine, if_exists="append", index=False)
-    print(f"  dim_geography: {len(dim_geo)} rows")
+    print(f"  dim_geography: {insert_ignore(dim_geo, 'dim_geography', ['region'])} new rows")
 
     dim_campaign = pd.DataFrame({"campaign_id": ads["campaign_id"].dropna().unique()})
-    dim_campaign.to_sql("dim_campaign", engine, if_exists="append", index=False)
-    print(f"  dim_campaign: {len(dim_campaign)} rows")
+    print(f"  dim_campaign: {insert_ignore(dim_campaign, 'dim_campaign', ['campaign_id'])} new rows")
 
     # -------- pull back surrogate keys for joining --------
     user_keys = pd.read_sql("SELECT user_key, user_id FROM dim_user", engine)
@@ -125,8 +141,8 @@ def main():
         "event_id", "user_key", "content_key", "device_key", "geography_key",
         "date_key", "event_timestamp", "event_type", "watch_seconds", "source_file"
     ]]
-    fact_view.to_sql("fact_view", engine, if_exists="append", index=False)
-    print(f"  fact_view: {len(fact_view)} rows loaded (of {len(views)} silver rows)")
+    n = insert_ignore(fact_view, "fact_view", ["event_id"])
+    print(f"  fact_view: {n} new rows (of {len(views)} silver rows; duplicates skipped)")
 
     # -------- fact_ad --------
     fa = ads.merge(user_lookup[["user_id", "user_key", "geography_key"]], on="user_id", how="inner")
@@ -138,8 +154,8 @@ def main():
         "ad_event_id", "user_key", "content_key", "campaign_key", "geography_key",
         "date_key", "event_timestamp", "impression", "click", "source_file"
     ]]
-    fact_ad.to_sql("fact_ad", engine, if_exists="append", index=False)
-    print(f"  fact_ad: {len(fact_ad)} rows loaded (of {len(ads)} silver rows)")
+    n = insert_ignore(fact_ad, "fact_ad", ["ad_event_id"])
+    print(f"  fact_ad: {n} new rows (of {len(ads)} silver rows; duplicates skipped)")
 
     # -------- fact_subscription --------
     fs = subs.merge(user_lookup[["user_id", "user_key"]], on="user_id", how="inner")
@@ -149,8 +165,16 @@ def main():
     fact_subscription = fs[[
         "subscription_id", "user_key", "start_date_key", "plan", "status", "source_file"
     ]]
-    fact_subscription.to_sql("fact_subscription", engine, if_exists="append", index=False)
-    print(f"  fact_subscription: {len(fact_subscription)} rows loaded (of {len(subs)} silver rows)")
+    n = insert_ignore(fact_subscription, "fact_subscription", ["subscription_id"])
+    print(f"  fact_subscription: {n} new rows (of {len(subs)} silver rows; duplicates skipped)")
+
+    # -------- fact_support --------
+    fsu = support.merge(user_lookup[["user_id", "user_key"]], on="user_id", how="inner")
+    fsu["date_only"] = fsu["created_at"].dt.normalize()
+    fsu = fsu.merge(date_keys, left_on="date_only", right_on="full_date", how="inner")
+    fact_support = fsu[["ticket_id", "user_key", "date_key", "created_at", "issue_type", "source_file"]]
+    n = insert_ignore(fact_support, "fact_support", ["ticket_id"])
+    print(f"  fact_support: {n} new rows (of {len(support)} silver rows; duplicates skipped)")
 
     print("\nDone. fact_engagement is left empty here - it's populated by the dbt model, "
           "since it's a daily aggregate derived FROM fact_view, not raw source data.")
