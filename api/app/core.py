@@ -27,7 +27,14 @@ log = logging.getLogger("mediapulse.api")
 # Credentials come from environment variables only (never hardcoded in git).
 def _db_url() -> str:
     if os.environ.get("DATABASE_URL"):
-        return os.environ["DATABASE_URL"].replace("postgres://", "postgresql+psycopg2://", 1)
+        url = os.environ["DATABASE_URL"]
+        # Normalize whichever scheme the provider gives us (postgres:// or
+        # postgresql://) to the psycopg2 driver explicitly, so SQLAlchemy
+        # never falls back to the (not installed) psycopg v3 driver.
+        if url.startswith("postgresql+"):
+            return url
+        return url.replace("postgresql://", "postgresql+psycopg2://", 1).replace(
+            "postgres://", "postgresql+psycopg2://", 1)
     return "postgresql+psycopg2://{u}:{p}@{h}:{port}/{d}".format(
         u=os.environ.get("PGUSER", "mediapulse"),
         p=os.environ.get("PGPASSWORD", "mediapulse_dev_pw"),
