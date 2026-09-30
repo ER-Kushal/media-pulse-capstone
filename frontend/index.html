@@ -413,7 +413,7 @@ function App() {
   return (<>
     <header><h1>Media<span>Pulse</span></h1>
       <nav>{PAGES.map(([id, label]) => <button key={id} className={page === id ? "active" : ""} onClick={() => setPage(id)}>{label}</button>)}</nav>
-      <div className="userbox"><span>{user.username} · <Badge v={user.role === "viewer" ? "info" : "warning"} /> {user.role}</span>
+      <div className="userbox"><span>{user.username} · <span className={"badge b-" + (user.role === "viewer" ? "info" : "warning")}>{user.role}</span></span>
         <button className="btn ghost" onClick={() => api.logout()}>Sign out</button></div></header>
     <main><Page title={title} live={live} setLive={setLive} tick={tick} reload={reload} updated={updated}>
       <Current tick={tick} go={setPage} /></Page></main>
