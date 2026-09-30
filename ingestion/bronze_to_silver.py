@@ -206,7 +206,9 @@ def main():
         ads["click"], true_vals={"1", "yes", "clicked"}, false_vals={"0", "no"}, label="click")
 
     # Business rule: a click cannot happen without an impression.
-    invalid_click = (ads["click"] == 1) & (ads["impression"] != 1)
+    # NOTE: impression can be null (unknown); pandas treats null comparisons as "unknown"
+    # (not True), so we fill nulls first or those rows would silently escape the rule.
+    invalid_click = ((ads["click"] == 1) & (ads["impression"].fillna(0) != 1)).fillna(False)
     n_invalid_click = invalid_click.sum()
     ads.loc[invalid_click, "impression"] = 1
     log(f"[ads] business rule 'click implies impression': fixed {n_invalid_click} rows "
