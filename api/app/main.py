@@ -226,11 +226,15 @@ def churn_risk(tier: Optional[Literal["low", "medium", "high"]] = None,
 # ------------------------------------------------------------------ 5. campaigns
 @api.get("/campaigns", tags=["monetization"])
 def campaigns(limit: int = Query(100, ge=1, le=500)):
+    # Revenue is computed from the SUMMED impressions, not by adding up each
+    # day's already-rounded cents - summing pre-rounded tiny amounts loses
+    # almost all the money (many rows round to $0.00 individually).
     return rows("""SELECT campaign_id, sum(ad_opportunities) AS ad_opportunities, sum(impressions) AS impressions,
                           sum(clicks) AS clicks,
                           round(sum(impressions)::numeric / nullif(sum(ad_opportunities),0), 4) AS ad_fill_rate,
                           round(sum(clicks)::numeric / nullif(sum(impressions),0), 4) AS ctr,
-                          sum(estimated_revenue_usd) AS estimated_revenue_usd, max(assumed_cpm_usd) AS assumed_cpm_usd
+                          round(sum(impressions)::numeric / 1000.0 * max(assumed_cpm_usd), 2) AS estimated_revenue_usd,
+                          max(assumed_cpm_usd) AS assumed_cpm_usd
                    FROM public_marts.mart_ad_performance GROUP BY campaign_id
                    ORDER BY sum(impressions) DESC NULLS LAST LIMIT :l""", l=limit)
 
@@ -240,8 +244,10 @@ def campaigns(limit: int = Query(100, ge=1, le=500)):
 def dashboard():
     watch = one("SELECT coalesce(sum(watch_seconds),0) AS s, count(*) AS views, count(DISTINCT user_key) AS users FROM fact_view")
     comp = one("SELECT sum(avg_completion_rate * sample_size) / nullif(sum(sample_size),0) AS c FROM public_marts.mart_completion_rate")
-    ads = one("""SELECT sum(ad_opportunities) AS o, sum(impressions) AS i, sum(clicks) AS c, sum(estimated_revenue_usd) AS rev
+    ads = one("""SELECT sum(ad_opportunities) AS o, sum(impressions) AS i, sum(clicks) AS c,
+                        max(assumed_cpm_usd) AS cpm
                  FROM public_marts.mart_ad_performance""")
+    ads_rev = round(float(ads["i"]) / 1000.0 * float(ads["cpm"]), 2) if ads["i"] and ads["cpm"] else 0.0
     subs = one("""SELECT count(*) AS total, count(*) FILTER (WHERE status='active') AS active,
                          count(*) FILTER (WHERE status IN ('cancelled','expired')) AS lost FROM fact_subscription""")
     ret = one("SELECT avg(day_over_day_retention_rate) AS r FROM public_marts.mart_retention")
@@ -259,7 +265,7 @@ def dashboard():
                 "subscribers_total": subs["total"], "subscribers_active": subs["active"], "subscribers_lost": subs["lost"],
                 "ad_fill_rate": (float(ads["i"]) / float(ads["o"])) if ads["o"] else None,
                 "ctr": (float(ads["c"]) / float(ads["i"])) if ads["i"] else None,
-                "estimated_revenue_usd": ads["rev"],
+                "estimated_revenue_usd": ads_rev,
                 "open_alerts": {a["severity"]: a["n"] for a in alerts}},
             "watch_time_trend": list(reversed(trend)), "subscriber_growth": list(reversed(growth)),
             "watch_time_by_genre": genres}
